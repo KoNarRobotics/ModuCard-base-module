@@ -1868,9 +1868,8 @@
 		)
 		(uuid "717d74d6-4e60-47d5-9186-3b90686a1ccf")
 	)
-	(label "CAN1.+"
+	(label "CAN.+"
 		(at 189.23 101.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1879,9 +1878,8 @@
 		)
 		(uuid "0e733654-56fc-4bc5-a21e-656d8c08edd3")
 	)
-	(label "CAN1.RX"
+	(label "CAN.RX"
 		(at 134.62 104.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1890,9 +1888,8 @@
 		)
 		(uuid "4282fbe8-aad6-472e-8e15-bfd001ccd0df")
 	)
-	(label "CAN1.TX"
+	(label "CAN.TX"
 		(at 134.62 101.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1901,9 +1898,8 @@
 		)
 		(uuid "90c47fc9-fd61-4816-994c-d615e8f170ce")
 	)
-	(label "CAN1.-"
+	(label "CAN.-"
 		(at 189.23 104.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1915,7 +1911,6 @@
 	(hierarchical_label "CAN{CAN}"
 		(shape input)
 		(at 196.85 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1927,7 +1922,6 @@
 	(hierarchical_label "CAN{RX TX}"
 		(shape input)
 		(at 113.03 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
