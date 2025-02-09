@@ -1236,7 +1236,7 @@
 		)
 	)
 	(bus_alias "USB"
-		(members "+" "-")
+		(members "D+" "D-")
 	)
 	(junction
 		(at 220.98 96.52)
@@ -1904,7 +1904,6 @@
 	)
 	(label "USBIN1.D+"
 		(at 163.83 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1914,7 +1913,7 @@
 		)
 		(uuid "0d0a4876-577e-4272-8ddc-5741ae1b9676")
 	)
-	(label "USB_MCU.+"
+	(label "USB_MCU.D+"
 		(at 78.74 88.9 0)
 		(effects
 			(font
@@ -1924,7 +1923,7 @@
 		)
 		(uuid "0fcc8fed-3a89-44cc-ade0-4e36cb3eceac")
 	)
-	(label "USB_MCU.-"
+	(label "USB_MCU.D-"
 		(at 78.74 86.36 0)
 		(effects
 			(font
@@ -1936,7 +1935,6 @@
 	)
 	(label "USBIN1.D-"
 		(at 163.83 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1948,7 +1946,6 @@
 	)
 	(label "USBOUT1.D-"
 		(at 90.17 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1960,7 +1957,6 @@
 	)
 	(label "USBOUT1.D+"
 		(at 90.17 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1970,10 +1966,9 @@
 		)
 		(uuid "9a0caa3a-648e-455d-9f17-c4dd8484da9b")
 	)
-	(hierarchical_label "USBIN1.{+ -}"
+	(hierarchical_label "USBIN1{USB}"
 		(shape input)
 		(at 177.8 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1985,7 +1980,6 @@
 	(hierarchical_label "USBOUT1{USB}"
 		(shape input)
 		(at 46.99 85.09 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1997,7 +1991,6 @@
 	(hierarchical_label "USB_MCU{USB}"
 		(shape input)
 		(at 59.69 76.2 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

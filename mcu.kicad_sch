@@ -4747,6 +4747,9 @@
 	(bus_alias "QSPI"
 		(members "IO0" "IO1" "IO2" "IO3" "CS" "SCLK")
 	)
+	(bus_alias "SWD"
+		(members "SWCLK" "SWDIO" "~{RST}")
+	)
 	(junction
 		(at 78.74 21.59)
 		(diameter 0)
@@ -8052,16 +8055,6 @@
 		)
 		(uuid "547ac4c1-7255-4d71-94b3-ba0346887c76")
 	)
-	(label "~{RST}"
-		(at 93.98 46.99 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5490c5e1-084c-470f-ac4c-18758fa39f47")
-	)
 	(label "NRST"
 		(at 30.48 161.29 0)
 		(effects
@@ -8352,7 +8345,7 @@
 		)
 		(uuid "7312433b-9b6a-4837-9114-87e143d6688e")
 	)
-	(label "~{RST}"
+	(label "SWD.~{RST}"
 		(at 198.12 93.98 0)
 		(effects
 			(font
@@ -8792,6 +8785,16 @@
 		)
 		(uuid "af33cf74-8ca7-4b97-9a46-2c0febc6afd3")
 	)
+	(label "SWD.~{RST}"
+		(at 93.98 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b00605a9-ba23-4537-89ee-1ec941d8c0b7")
+	)
 	(label "PC1"
 		(at 156.21 135.89 0)
 		(effects
@@ -9176,7 +9179,7 @@
 		)
 		(uuid "548b52a2-0491-4908-b420-116aa9d05252")
 	)
-	(hierarchical_label "SWD1{SWD}"
+	(hierarchical_label "SWD{SWD}"
 		(shape input)
 		(at 215.9 86.36 0)
 		(effects
