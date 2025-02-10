@@ -3042,9 +3042,6 @@
 			)
 		)
 	)
-	(bus_alias "BACKPLANE"
-		(members "D+" "D-")
-	)
 	(bus_entry
 		(at 233.68 143.51)
 		(size 2.54 2.54)
@@ -4993,6 +4990,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 134.62) (xy 201.93 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d11270ca-cf15-4714-a3be-0edf86acd16c")
+	)
+	(wire
+		(pts
 			(xy 48.26 124.46) (xy 91.44 124.46)
 		)
 		(stroke
@@ -5352,8 +5359,8 @@
 		(uuid "fef39c33-5d91-4cd1-bec3-23d1af4b56b5")
 	)
 	(rectangle
-		(start 173.99 129.54)
-		(end 274.32 158.75)
+		(start 173.99 127)
+		(end 274.32 161.29)
 		(stroke
 			(width 0)
 			(type default)
@@ -5573,8 +5580,8 @@
 		)
 		(uuid "347b586f-67cb-4b2c-9688-7b95d257ca5a")
 	)
-	(label "USB.D-"
-		(at 226.06 148.59 180)
+	(label "BACKPLANE.D-"
+		(at 228.6 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5849,8 +5856,8 @@
 		)
 		(uuid "a51c00dd-4678-446e-b0f7-227f17bf3c31")
 	)
-	(label "USB.D+"
-		(at 226.06 143.51 180)
+	(label "BACKPLANE.D+"
+		(at 229.87 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6105,7 +6112,7 @@
 		(uuid "ffc9b1eb-8889-4e46-b2e4-f0117a6919d5")
 	)
 	(hierarchical_label "CAN2{CAN}"
-		(shape input)
+		(shape bidirectional)
 		(at 227.33 107.95 180)
 		(effects
 			(font
@@ -6137,8 +6144,8 @@
 		)
 		(uuid "bdf95b72-593d-429d-864f-cf4b793be70f")
 	)
-	(hierarchical_label "USB{BACKPLANE}"
-		(shape input)
+	(hierarchical_label "BACKPLANE{USB}"
+		(shape output)
 		(at 247.65 154.94 0)
 		(effects
 			(font
@@ -6149,7 +6156,7 @@
 		(uuid "c08c402c-fa3f-40c4-b347-5fc2b887ec52")
 	)
 	(hierarchical_label "CAN1{CAN}"
-		(shape input)
+		(shape bidirectional)
 		(at 227.33 100.33 180)
 		(effects
 			(font
@@ -6364,6 +6371,72 @@
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/ff3476d7-2f10-4f79-9864-988601c7ce1b"
 					(reference "#PWR0451")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 201.93 134.62 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f7fb1e2-4a8d-4120-ad4c-9f364cc6dc4e")
+		(property "Reference" "#PWR0487"
+			(at 201.93 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5v_stdby"
+			(at 201.93 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 201.93 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba98e59b-6ed1-4e80-8bb5-755ed0b84da5")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/ff3476d7-2f10-4f79-9864-988601c7ce1b"
+					(reference "#PWR0487")
 					(unit 1)
 				)
 			)
@@ -8893,6 +8966,72 @@
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/ff3476d7-2f10-4f79-9864-988601c7ce1b"
 					(reference "#PWR0461")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 201.93 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb38227f-2726-4f17-b0b8-1c69c999fba5")
+		(property "Reference" "#PWR0486"
+			(at 201.93 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 201.93 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aaf537be-710d-4199-a6b4-0688efe6bd27")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/ff3476d7-2f10-4f79-9864-988601c7ce1b"
+					(reference "#PWR0486")
 					(unit 1)
 				)
 			)

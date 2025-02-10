@@ -1909,7 +1909,7 @@
 		(uuid "b2a60d80-d499-4bad-94da-8826971d597f")
 	)
 	(hierarchical_label "CAN{CAN}"
-		(shape input)
+		(shape bidirectional)
 		(at 196.85 97.79 0)
 		(effects
 			(font
@@ -1920,7 +1920,7 @@
 		(uuid "38f07b9d-c33a-44bc-8b13-2ebae81a4589")
 	)
 	(hierarchical_label "CAN{RX TX}"
-		(shape input)
+		(shape bidirectional)
 		(at 113.03 92.71 180)
 		(effects
 			(font

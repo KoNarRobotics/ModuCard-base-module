@@ -9191,7 +9191,7 @@
 		(uuid "8bd889b2-ee9f-4d7f-931d-ed16fbb65131")
 	)
 	(hierarchical_label "QSPI1{QSPI}"
-		(shape input)
+		(shape bidirectional)
 		(at 246.38 105.41 180)
 		(effects
 			(font

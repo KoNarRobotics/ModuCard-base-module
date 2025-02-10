@@ -16,12 +16,9 @@
 	(bus_alias "CAN"
 		(members "+" "-")
 	)
-	(bus_alias "ST-LINK"
-		(members "D+" "D-")
-	)
 	(bus
 		(pts
-			(xy 110.49 64.77) (xy 104.14 64.77)
+			(xy 110.49 66.04) (xy 104.14 66.04)
 		)
 		(stroke
 			(width 0)
@@ -41,7 +38,7 @@
 	)
 	(bus
 		(pts
-			(xy 135.89 55.88) (xy 148.59 55.88)
+			(xy 135.89 60.96) (xy 148.59 60.96)
 		)
 		(stroke
 			(width 0)
@@ -111,7 +108,7 @@
 	)
 	(bus
 		(pts
-			(xy 104.14 41.91) (xy 104.14 59.69)
+			(xy 104.14 41.91) (xy 104.14 55.88)
 		)
 		(stroke
 			(width 0)
@@ -121,7 +118,7 @@
 	)
 	(bus
 		(pts
-			(xy 104.14 59.69) (xy 110.49 59.69)
+			(xy 104.14 55.88) (xy 110.49 55.88)
 		)
 		(stroke
 			(width 0)
@@ -151,7 +148,7 @@
 	)
 	(bus
 		(pts
-			(xy 104.14 64.77) (xy 104.14 81.28)
+			(xy 104.14 66.04) (xy 104.14 81.28)
 		)
 		(stroke
 			(width 0)
@@ -198,7 +195,7 @@
 			)
 			(uuid "4671fdb0-d0e0-441d-8d1d-4860636d85e9")
 		)
-		(pin "CAN{CAN}" input
+		(pin "CAN{CAN}" bidirectional
 			(at 110.49 116.84 180)
 			(effects
 				(font
@@ -293,7 +290,7 @@
 			)
 			(uuid "2ad324a7-4e76-4def-a2aa-f7156431611c")
 		)
-		(pin "CAN{CAN}" input
+		(pin "CAN{CAN}" bidirectional
 			(at 110.49 102.87 180)
 			(effects
 				(font
@@ -341,7 +338,7 @@
 				(justify left top)
 			)
 		)
-		(pin "USB{SWIN}" input
+		(pin "BACKPLANE{USB}" input
 			(at 110.49 35.56 180)
 			(effects
 				(font
@@ -349,9 +346,9 @@
 				)
 				(justify left)
 			)
-			(uuid "efd51ae3-d43d-450c-89d3-0638b41ff7e5")
+			(uuid "49cd1327-0574-4555-b98d-686ad06add1f")
 		)
-		(pin "USB{SWOUT}" input
+		(pin "EXTUSB{USB}" output
 			(at 110.49 41.91 180)
 			(effects
 				(font
@@ -359,7 +356,7 @@
 				)
 				(justify left)
 			)
-			(uuid "a3e09de3-e623-467c-9e33-c9afab809cbb")
+			(uuid "c146d2d2-99d4-47de-b999-c91753c99574")
 		)
 		(instances
 			(project "base-module"
@@ -399,7 +396,7 @@
 				(justify left top)
 			)
 		)
-		(pin "QSPI1{QSPI}" input
+		(pin "QSPI1{QSPI}" bidirectional
 			(at 193.04 73.66 0)
 			(effects
 				(font
@@ -440,7 +437,7 @@
 			(uuid "b5a0d17e-17b9-488f-996c-746b62a94522")
 		)
 		(pin "USB_MCU{USB}" input
-			(at 148.59 55.88 180)
+			(at 148.59 60.96 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -488,7 +485,7 @@
 			)
 		)
 		(pin "USBIN1{USB}" input
-			(at 110.49 59.69 180)
+			(at 110.49 55.88 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -497,8 +494,8 @@
 			)
 			(uuid "70ba8c34-1228-4bf6-9d23-9d1360b2bc8c")
 		)
-		(pin "USBOUT1{USB}" input
-			(at 110.49 64.77 180)
+		(pin "USBOUT1{USB}" output
+			(at 110.49 66.04 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -508,7 +505,7 @@
 			(uuid "bc0f17fd-1568-4cfd-a9dc-839741c5fc8e")
 		)
 		(pin "USB_MCU{USB}" input
-			(at 135.89 55.88 0)
+			(at 135.89 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -555,7 +552,7 @@
 				(justify left top)
 			)
 		)
-		(pin "QSPI{QSPI}" input
+		(pin "QSPI{QSPI}" bidirectional
 			(at 204.47 73.66 180)
 			(effects
 				(font
@@ -603,7 +600,7 @@
 				(justify left top)
 			)
 		)
-		(pin "USB{ST-LINK}" input
+		(pin "ST-LINK{USB}" input
 			(at 110.49 81.28 180)
 			(effects
 				(font
@@ -613,7 +610,7 @@
 			)
 			(uuid "1f8bebf7-2c7a-401d-bf5b-ddb1b2e1fa68")
 		)
-		(pin "SWD{SWD}" input
+		(pin "SWD{SWD}" output
 			(at 135.89 77.47 0)
 			(effects
 				(font
@@ -691,17 +688,7 @@
 			)
 			(uuid "78f6447e-cc35-4bff-9181-e28e763cd973")
 		)
-		(pin "USB{BACKPLANE}" input
-			(at 93.98 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "8204d5dc-a9e6-4729-8a6f-019bcee90740")
-		)
-		(pin "CAN1{CAN}" input
+		(pin "CAN1{CAN}" bidirectional
 			(at 93.98 102.87 0)
 			(effects
 				(font
@@ -711,7 +698,7 @@
 			)
 			(uuid "f5cc3410-a9f9-4327-97b1-b02ad5c607a0")
 		)
-		(pin "CAN2{CAN}" input
+		(pin "CAN2{CAN}" bidirectional
 			(at 93.98 116.84 0)
 			(effects
 				(font
@@ -720,6 +707,16 @@
 				(justify right)
 			)
 			(uuid "1bb521b1-9157-430e-bc39-7309cc0c519b")
+		)
+		(pin "BACKPLANE{USB}" output
+			(at 93.98 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "de418b66-6533-4278-9c6e-995fea317169")
 		)
 		(instances
 			(project "base-module"
