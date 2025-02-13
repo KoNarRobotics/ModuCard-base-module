@@ -5302,7 +5302,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 116.84) (xy 220.98 116.84)
+			(xy 218.44 116.84) (xy 231.14 116.84)
 		)
 		(stroke
 			(width 0)
@@ -7004,16 +7004,6 @@
 		)
 		(uuid "97df5423-cbb6-4da8-91a3-618003eb79bf")
 	)
-	(label "USB.D+"
-		(at 220.98 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a0a16793-4282-4ed4-a5b2-a0676e2b147c")
-	)
 	(label "SWD.~{RST}"
 		(at 102.87 104.14 0)
 		(effects
@@ -7043,6 +7033,16 @@
 			(justify left bottom)
 		)
 		(uuid "ba05e9e0-e548-41a3-939f-a63a5c658c3c")
+	)
+	(label "ST-LINK.D+"
+		(at 231.14 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ce235c18-4afa-4be4-a7cb-ec3135e9d0fc")
 	)
 	(label "SWD.~{RST}"
 		(at 44.45 82.55 0)

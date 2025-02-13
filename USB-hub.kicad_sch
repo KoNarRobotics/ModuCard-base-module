@@ -1904,6 +1904,14 @@
 		(uuid "db90f623-49bd-4eea-a8d3-47c907dd5e5e")
 	)
 	(no_connect
+		(at 127 83.82)
+		(uuid "2d15e1ea-c562-443b-b26f-80dea3442f17")
+	)
+	(no_connect
+		(at 127 81.28)
+		(uuid "305e9a67-dfc1-464f-a5d4-6d0af612eab5")
+	)
+	(no_connect
 		(at 127 78.74)
 		(uuid "b754ba03-6fd8-4d2c-8cbc-55b649609288")
 	)

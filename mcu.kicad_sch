@@ -5793,6 +5793,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(bus_alias "QSPI"
 		(members "IO0" "IO1" "IO2" "IO3" "CS" "SCLK")
@@ -5897,6 +5993,12 @@
 		(uuid "c3099b50-ac45-4227-a15f-25e4594103b7")
 	)
 	(junction
+		(at 134.62 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8e2e818-0f3c-4cc8-907b-bbc51b0b7e42")
+	)
+	(junction
 		(at 85.09 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5925,6 +6027,278 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea7ded51-0180-4d7d-9878-405cec6b363e")
+	)
+	(no_connect
+		(at 160.02 67.31)
+		(uuid "039e9bec-d00a-4785-a0bc-69570deb2c28")
+	)
+	(no_connect
+		(at 160.02 158.75)
+		(uuid "03a53d32-a9f7-4298-9192-98fe62e168bb")
+	)
+	(no_connect
+		(at 95.25 125.73)
+		(uuid "050c8f38-e913-4e32-a2b6-a6025bebdc24")
+	)
+	(no_connect
+		(at 160.02 62.23)
+		(uuid "0a0f7287-420a-49ee-87ef-7236443a1d3c")
+	)
+	(no_connect
+		(at 160.02 49.53)
+		(uuid "0d6b09c8-994a-4b84-a6fb-31454a7fc01b")
+	)
+	(no_connect
+		(at 160.02 54.61)
+		(uuid "1117552d-9a78-4c01-900d-9f3bc9bd6eee")
+	)
+	(no_connect
+		(at 160.02 64.77)
+		(uuid "11e20a92-f00f-4cb1-904f-e167761e336f")
+	)
+	(no_connect
+		(at 95.25 69.85)
+		(uuid "148ada28-5a21-4d2c-ba39-b4a66afb7201")
+	)
+	(no_connect
+		(at 160.02 69.85)
+		(uuid "207154de-fb69-43fd-999d-7079f2dd17e1")
+	)
+	(no_connect
+		(at 160.02 118.11)
+		(uuid "2169ad61-9ef8-4b96-981a-7b52f30d192a")
+	)
+	(no_connect
+		(at 95.25 151.13)
+		(uuid "22f0318c-08bc-468e-9c55-f78421d51507")
+	)
+	(no_connect
+		(at 160.02 148.59)
+		(uuid "270a5c7a-1a4e-4982-92f0-6511e1b34168")
+	)
+	(no_connect
+		(at 95.25 102.87)
+		(uuid "2a7f31ef-abdd-4561-9ad0-2499e744e5d5")
+	)
+	(no_connect
+		(at 95.25 62.23)
+		(uuid "2bc87e4a-a310-4cc5-928f-a59671e51531")
+	)
+	(no_connect
+		(at 95.25 92.71)
+		(uuid "2ebf9ff6-14d2-41c5-90d7-689425d20a5e")
+	)
+	(no_connect
+		(at 160.02 72.39)
+		(uuid "31ed9f5c-8ce0-4260-8e88-eb0f250e047a")
+	)
+	(no_connect
+		(at 160.02 120.65)
+		(uuid "393752e6-2ed3-4964-a252-3a84b8f32b50")
+	)
+	(no_connect
+		(at 95.25 97.79)
+		(uuid "3a60229a-dd0c-49d3-9da5-bf0643ce161a")
+	)
+	(no_connect
+		(at 160.02 97.79)
+		(uuid "3b8301a6-163f-4617-88a8-09ef6da61277")
+	)
+	(no_connect
+		(at 160.02 57.15)
+		(uuid "3ccb9de6-607c-42b9-bae8-ae224e0d3567")
+	)
+	(no_connect
+		(at 95.25 105.41)
+		(uuid "41860ad0-18e8-47c2-acea-a42de0b199cc")
+	)
+	(no_connect
+		(at 160.02 143.51)
+		(uuid "45d78886-7e36-4ff0-b778-60e4ee8b4da6")
+	)
+	(no_connect
+		(at 95.25 138.43)
+		(uuid "498c9ce6-23aa-4bba-9e27-cc0da27c7743")
+	)
+	(no_connect
+		(at 95.25 120.65)
+		(uuid "4a6c6447-ef22-4097-9ee7-1618701daa7e")
+	)
+	(no_connect
+		(at 160.02 90.17)
+		(uuid "55a58894-77c9-4dfe-921c-4d811f2dcc32")
+	)
+	(no_connect
+		(at 160.02 163.83)
+		(uuid "5cf8bf41-e822-450c-9a4e-f3dfd597f19b")
+	)
+	(no_connect
+		(at 160.02 100.33)
+		(uuid "63e94e10-5c9a-40ca-b862-c0ce6187ce78")
+	)
+	(no_connect
+		(at 160.02 168.91)
+		(uuid "667a5d66-04e3-45ae-bade-5459b9fc9dc4")
+	)
+	(no_connect
+		(at 160.02 135.89)
+		(uuid "66a744a8-4420-4b19-a6b2-6b9c689fece4")
+	)
+	(no_connect
+		(at 160.02 59.69)
+		(uuid "6ac9b803-9f39-4bbd-9f5b-a365c3ff45f1")
+	)
+	(no_connect
+		(at 95.25 133.35)
+		(uuid "7064bc43-d57c-42d0-8902-4c7564e0f34a")
+	)
+	(no_connect
+		(at 95.25 100.33)
+		(uuid "7133db51-7e55-45bc-b3d2-a3d55a24fc0e")
+	)
+	(no_connect
+		(at 160.02 123.19)
+		(uuid "75b23bc8-4b57-4d24-85d7-fc5daa9c5f4c")
+	)
+	(no_connect
+		(at 95.25 148.59)
+		(uuid "7e89d103-5d80-41a6-9a51-7835704c33dc")
+	)
+	(no_connect
+		(at 160.02 156.21)
+		(uuid "7fa8e0cb-9ab7-4add-96b1-525450a07cdd")
+	)
+	(no_connect
+		(at 160.02 161.29)
+		(uuid "8ac3b33c-d4b6-432c-9dae-2dac1ba8d875")
+	)
+	(no_connect
+		(at 95.25 107.95)
+		(uuid "90da67c2-f687-4e9d-a637-d3deefd5abdc")
+	)
+	(no_connect
+		(at 160.02 92.71)
+		(uuid "99233251-3d04-42d5-8d90-7384597dcfda")
+	)
+	(no_connect
+		(at 95.25 85.09)
+		(uuid "9e67d127-49b1-4d42-a4bd-42231f0d8b3b")
+	)
+	(no_connect
+		(at 160.02 113.03)
+		(uuid "9ebd2e00-4adf-46b3-9668-382eab2ae9eb")
+	)
+	(no_connect
+		(at 160.02 146.05)
+		(uuid "a33cd5dd-f86a-42ba-98ca-e0602dec0ecf")
+	)
+	(no_connect
+		(at 160.02 52.07)
+		(uuid "a38e71fd-f9b7-466f-a0ad-1ca768bebf54")
+	)
+	(no_connect
+		(at 160.02 140.97)
+		(uuid "a3f10579-4a9a-4124-8f8a-5bf7b4ac8310")
+	)
+	(no_connect
+		(at 95.25 72.39)
+		(uuid "a4193715-eb0a-4e6c-8065-9c8d24b4ca56")
+	)
+	(no_connect
+		(at 95.25 77.47)
+		(uuid "a575a027-d9b5-4f3c-80d0-4ca682c96f5b")
+	)
+	(no_connect
+		(at 160.02 166.37)
+		(uuid "a7d8496b-bac9-4d18-b881-36cccf968d64")
+	)
+	(no_connect
+		(at 160.02 110.49)
+		(uuid "b22f95f3-cc75-4671-bbea-0d94dfa93e2c")
+	)
+	(no_connect
+		(at 160.02 85.09)
+		(uuid "b613d544-b855-4b29-8a34-61a5f4a84713")
+	)
+	(no_connect
+		(at 95.25 135.89)
+		(uuid "b65d9a98-1bc9-4956-8d26-dcf7d2b56cdb")
+	)
+	(no_connect
+		(at 95.25 64.77)
+		(uuid "bed3ad66-013b-4174-9513-ef22fa4b85a4")
+	)
+	(no_connect
+		(at 95.25 90.17)
+		(uuid "d0ce64fc-eaff-478f-844b-f5d0b1eda3b2")
+	)
+	(no_connect
+		(at 95.25 80.01)
+		(uuid "d1b945f8-ca5e-4892-8a24-edb4469e6eda")
+	)
+	(no_connect
+		(at 160.02 128.27)
+		(uuid "d8365773-0684-4cfb-89d0-547728f430b3")
+	)
+	(no_connect
+		(at 95.25 128.27)
+		(uuid "da724f57-be61-4e9d-a470-1bf70dc5ef5b")
+	)
+	(no_connect
+		(at 160.02 171.45)
+		(uuid "de375ed8-814a-40c3-9333-39863a77672d")
+	)
+	(no_connect
+		(at 160.02 46.99)
+		(uuid "deda6709-f298-46f5-a8b0-bd2b2f852e74")
+	)
+	(no_connect
+		(at 95.25 118.11)
+		(uuid "e5442a7b-d59e-4f7b-9ebc-7757bd0f8fbf")
+	)
+	(no_connect
+		(at 160.02 133.35)
+		(uuid "e9cf2bd6-c808-4ffe-98df-d9221fe74e4a")
+	)
+	(no_connect
+		(at 95.25 130.81)
+		(uuid "ebf4d4b4-f39b-4396-9211-77bcd6cc16e4")
+	)
+	(no_connect
+		(at 95.25 57.15)
+		(uuid "ef554b3f-0b57-4f67-9b40-9b9ba3f4fbba")
+	)
+	(no_connect
+		(at 160.02 138.43)
+		(uuid "f26f00b8-34bd-447c-a988-64ce611eed2d")
+	)
+	(no_connect
+		(at 160.02 125.73)
+		(uuid "f367ab42-7c41-4dc8-98dc-1841be308052")
+	)
+	(no_connect
+		(at 160.02 153.67)
+		(uuid "f744abab-c8cf-41b5-8463-aea5e58da23a")
+	)
+	(no_connect
+		(at 95.25 82.55)
+		(uuid "fd3f9a2e-dbea-4024-aa43-de253f8b24c5")
+	)
+	(no_connect
+		(at 95.25 95.25)
+		(uuid "fe20f848-e7b7-4abb-8bf0-7627f45d6e86")
+	)
+	(no_connect
+		(at 95.25 87.63)
+		(uuid "fe56164e-28eb-4182-b05a-4621325957bb")
+	)
+	(no_connect
+		(at 160.02 151.13)
+		(uuid "feaf2433-034c-4ca1-a384-ca89a5b4ae94")
+	)
+	(no_connect
+		(at 95.25 123.19)
+		(uuid "fefd33ef-6e50-4e19-b835-80536e41137c")
 	)
 	(bus_entry
 		(at 233.68 54.61)
@@ -6840,6 +7214,16 @@
 			(type default)
 		)
 		(uuid "58550a40-6451-46fe-9246-58a00c193877")
+	)
+	(wire
+		(pts
+			(xy 134.62 24.13) (xy 134.62 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58d317f2-815a-4868-a6ed-829914631e27")
 	)
 	(bus
 		(pts
@@ -8450,16 +8834,6 @@
 		)
 		(uuid "4e279dc4-5a7b-4576-9004-40ddb78bc408")
 	)
-	(label "QSPI1.SCLK"
-		(at 160.02 115.57 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "547ac4c1-7255-4d71-94b3-ba0346887c76")
-	)
 	(label "NRST"
 		(at 30.48 162.56 0)
 		(effects
@@ -8979,6 +9353,16 @@
 			(justify left bottom)
 		)
 		(uuid "b1dd9f2d-37f1-4309-80c1-735bff9be847")
+	)
+	(label "QSPI1.CS"
+		(at 160.02 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b3975e1b-ae96-411e-84d2-782a115510d4")
 	)
 	(label "PA10"
 		(at 160.02 72.39 180)
@@ -13099,6 +13483,71 @@
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/ae074854-c02c-496b-964f-ecb8956e53f8"
 					(reference "#PWR0402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 134.62 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90f88cf2-c12e-4216-822d-77c4352a830e")
+		(property "Reference" "#FLG0906"
+			(at 134.62 22.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 134.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 134.62 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88413ffc-32a7-4b68-84c7-ade65184dd44")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/ae074854-c02c-496b-964f-ecb8956e53f8"
+					(reference "#FLG0906")
 					(unit 1)
 				)
 			)
