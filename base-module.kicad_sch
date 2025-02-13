@@ -9,82 +9,225 @@
 		(date "2024-12-23")
 		(rev "1.0.0")
 		(company "KoNaR")
-		(comment 1 "Base project author: Dominik Pluta")
+		(comment 1 "Base project authors: Dominik Pluta, Artem Horiunov")
 		(comment 2 "Project author: <author>")
 	)
 	(lib_symbols)
-	(bus_alias "CAN1"
-		(members "1+" "1-")
+	(bus_alias "CAN"
+		(members "+" "-")
 	)
-	(bus_alias "CAN2"
-		(members "2+" "2-")
+	(no_connect
+		(at 81.28 82.55)
+		(uuid "225d1b4d-20a1-48d7-98fe-8709d91fa2b8")
 	)
-	(bus_alias "ST-LINK"
-		(members "D+" "D-")
+	(no_connect
+		(at 81.28 88.9)
+		(uuid "4102e771-06b2-46c5-8768-1c4b40e21eea")
 	)
-	(wire
-		(pts
-			(xy 165.1 81.28) (xy 177.8 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80cabf84-d812-47c9-aa3c-ecc5ed17e9c9")
-	)
-	(wire
-		(pts
-			(xy 165.1 83.82) (xy 177.8 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9004fe89-21d6-412e-aaf0-971861cd77bb")
-	)
-	(wire
-		(pts
-			(xy 165.1 78.74) (xy 177.8 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97f8d972-04dc-42d9-b2f4-a6356b8dd1e6")
+	(no_connect
+		(at 81.28 96.52)
+		(uuid "b3c7e6b3-59d6-467d-a4c3-b7bb1d57cd13")
 	)
 	(bus
 		(pts
-			(xy 127 93.98) (xy 177.8 93.98)
+			(xy 123.19 77.47) (xy 116.84 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a2cb46fd-f08e-410c-b6d9-9f0050eff1f2")
+		(uuid "088fd8c2-eebb-4af1-bbe0-793e15cd7b8f")
 	)
 	(bus
 		(pts
-			(xy 127 91.44) (xy 177.8 91.44)
+			(xy 106.68 114.3) (xy 123.19 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bfda967e-b864-4ed9-bd9c-55c91c99ab83")
+		(uuid "0b7c907d-f1c4-42f1-b83e-70387c7fa799")
 	)
 	(bus
 		(pts
-			(xy 127 83.82) (xy 139.7 83.82)
+			(xy 148.59 72.39) (xy 161.29 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c19bf298-d6bb-470d-9503-1314e8f4eeff")
+		(uuid "0c1d7469-42a8-449b-8405-80a700e5dd75")
+	)
+	(bus
+		(pts
+			(xy 123.19 53.34) (xy 116.84 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3922af01-4562-42b3-9ff2-97c27f6880db")
+	)
+	(bus
+		(pts
+			(xy 106.68 46.99) (xy 123.19 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a76b16b-fd09-4b40-9715-921b33f4a267")
+	)
+	(bus
+		(pts
+			(xy 148.59 128.27) (xy 161.29 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ffc347e-25a7-4285-8492-119d5028459a")
+	)
+	(bus
+		(pts
+			(xy 205.74 85.09) (xy 217.17 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b75e62e9-86a7-4e1f-a8bc-f2a6ae72f7b1")
+	)
+	(bus
+		(pts
+			(xy 116.84 92.71) (xy 123.19 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7a70df5-1b4b-46c9-a0b5-092a546e1998")
+	)
+	(bus
+		(pts
+			(xy 106.68 128.27) (xy 123.19 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8659fb4-8309-4884-99fe-e479e3dbee23")
+	)
+	(bus
+		(pts
+			(xy 116.84 53.34) (xy 116.84 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d346c99e-d019-4069-bd82-8cd62f31a854")
+	)
+	(bus
+		(pts
+			(xy 116.84 67.31) (xy 123.19 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d483e764-8507-449d-983b-24a260b85a68")
+	)
+	(bus
+		(pts
+			(xy 148.59 88.9) (xy 161.29 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0896ddb-f544-4d74-9e0f-10bfadbbdd75")
+	)
+	(bus
+		(pts
+			(xy 148.59 114.3) (xy 161.29 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef28c418-2b23-4a89-a4bc-eaba24d2bbc8")
+	)
+	(bus
+		(pts
+			(xy 116.84 77.47) (xy 116.84 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1a21ac5-05c7-4b93-b021-879868b83e38")
 	)
 	(sheet
-		(at 101.6 50.8)
-		(size 25.4 12.7)
+		(at 123.19 124.46)
+		(size 25.4 7.62)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0158e235-e8c1-4e7e-a900-a22642d17049")
+		(property "Sheetname" "CAN transceiver 2"
+			(at 123.19 123.7484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "can-transceiver.kicad_sch"
+			(at 123.444 132.842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CAN{RX TX}" input
+			(at 148.59 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4671fdb0-d0e0-441d-8d1d-4860636d85e9")
+		)
+		(pin "CAN{CAN}" bidirectional
+			(at 123.19 128.27 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "858eda0b-4235-4ae8-86e3-335d4ad9a1da")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 81.28 144.78)
+		(size 25.4 10.16)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -95,7 +238,7 @@
 		)
 		(uuid "3f372eb1-53a4-4b00-8846-6751dd401eeb")
 		(property "Sheetname" "Power"
-			(at 101.6 50.0884 0)
+			(at 81.28 144.0684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -104,7 +247,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 101.6 64.0846 0)
+			(at 81.28 155.5246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -121,8 +264,123 @@
 		)
 	)
 	(sheet
-		(at 177.8 76.2)
-		(size 25.4 38.1)
+		(at 123.19 110.49)
+		(size 25.4 7.62)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3f4a4c31-63d6-4264-8452-81b45fffd897")
+		(property "Sheetname" "CAN transceiver 1"
+			(at 123.19 109.7784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "can-transceiver.kicad_sch"
+			(at 122.936 118.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CAN{RX TX}" input
+			(at 148.59 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2ad324a7-4e76-4def-a2aa-f7156431611c")
+		)
+		(pin "CAN{CAN}" bidirectional
+			(at 123.19 114.3 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "dd8404cf-fd75-41cc-aa36-6f2c3a0e4af5")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 123.19 41.91)
+		(size 25.4 13.97)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8fd5ae83-0658-4178-9e81-18085647e2bb")
+		(property "Sheetname" "USB"
+			(at 123.19 41.1984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB.kicad_sch"
+			(at 123.19 56.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BACKPLANE{USB}" input
+			(at 123.19 46.99 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "49cd1327-0574-4555-b98d-686ad06add1f")
+		)
+		(pin "EXTUSB{USB}" output
+			(at 123.19 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c146d2d2-99d4-47de-b999-c91753c99574")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 161.29 41.91)
+		(size 44.45 99.06)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -133,7 +391,7 @@
 		)
 		(uuid "ae074854-c02c-496b-964f-ecb8956e53f8")
 		(property "Sheetname" "MCU"
-			(at 177.8 75.4884 0)
+			(at 161.29 41.1984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -142,7 +400,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 177.8 114.8846 0)
+			(at 161.29 141.5546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -150,55 +408,55 @@
 				(justify left top)
 			)
 		)
-		(pin "SWCLK" input
-			(at 177.8 81.28 180)
+		(pin "QSPI1{QSPI}" bidirectional
+			(at 205.74 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
-			(uuid "f466f4aa-8dc5-4405-b497-c260b3ae9ba7")
+			(uuid "0a967f7e-bc5a-4548-8588-a3f32ad6b6f8")
 		)
-		(pin "SWDIO" bidirectional
-			(at 177.8 78.74 180)
+		(pin "CAN2{RX TX}" input
+			(at 161.29 128.27 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a513560d-1d45-4fff-ae45-10644ee8823a")
+			(uuid "8c8ec780-1712-44db-9376-b03ba592cd9d")
 		)
-		(pin "NRST" input
-			(at 177.8 83.82 180)
+		(pin "CAN1{RX TX}" input
+			(at 161.29 114.3 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e855ab60-70c7-4148-95d3-e4fb456b53bc")
+			(uuid "f0869290-4d95-416e-9491-be40cdf216cd")
 		)
-		(pin "CAN{CAN2}" input
-			(at 177.8 93.98 180)
+		(pin "SWD{SWD}" input
+			(at 161.29 88.9 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "79686f92-0206-41fc-86fb-d6a823bde5df")
+			(uuid "b5a0d17e-17b9-488f-996c-746b62a94522")
 		)
-		(pin "CAN{CAN1}" input
-			(at 177.8 91.44 180)
+		(pin "USB_MCU{USB}" input
+			(at 161.29 72.39 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "38c91eb6-8efd-4dec-978c-811da910d4a6")
+			(uuid "39375a4c-9c10-4301-9b74-766af280eb37")
 		)
 		(instances
 			(project "base-module"
@@ -209,7 +467,123 @@
 		)
 	)
 	(sheet
-		(at 139.7 76.2)
+		(at 123.19 63.5)
+		(size 25.4 16.51)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c4e62f69-aed8-45c4-bc74-414bd9b2dcad")
+		(property "Sheetname" "USB-hub"
+			(at 123.19 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB-hub.kicad_sch"
+			(at 123.19 80.5946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USBIN1{USB}" input
+			(at 123.19 67.31 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "70ba8c34-1228-4bf6-9d23-9d1360b2bc8c")
+		)
+		(pin "USBOUT1{USB}" output
+			(at 123.19 77.47 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bc0f17fd-1568-4cfd-a9dc-839741c5fc8e")
+		)
+		(pin "USB_MCU{USB}" input
+			(at 148.59 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0c956685-101a-4f07-b7bf-c720f0663eeb")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 217.17 80.01)
+		(size 27.94 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e8ac371f-5104-4cae-bf76-5dce1f5864c3")
+		(property "Sheetname" "QSPI FLASH"
+			(at 217.17 79.2984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "QSPI FLASH.kicad_sch"
+			(at 217.17 90.7546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "QSPI{QSPI}" bidirectional
+			(at 217.17 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "443041a0-7600-4d4d-a6ad-970474c79d47")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 123.19 86.36)
 		(size 25.4 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -221,7 +595,7 @@
 		)
 		(uuid "ed5910e5-42de-4923-b023-9e23a66937d0")
 		(property "Sheetname" "ST-LINK"
-			(at 139.7 75.4884 0)
+			(at 123.19 85.6484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -230,7 +604,7 @@
 			)
 		)
 		(property "Sheetfile" "st-link.kicad_sch"
-			(at 139.7 86.9446 0)
+			(at 123.19 97.1046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -238,38 +612,8 @@
 				(justify left top)
 			)
 		)
-		(pin "SWDIO" bidirectional
-			(at 165.1 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "2d3a07f1-a0da-4995-a1a7-c716b40bb0a7")
-		)
-		(pin "SWCLK" input
-			(at 165.1 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "15ad81de-7820-4ab2-a948-449c9d36e812")
-		)
-		(pin "NRST" output
-			(at 165.1 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "796f7663-2362-4a0b-a544-43d0d7e868f2")
-		)
-		(pin "USB{ST-LINK}" input
-			(at 139.7 83.82 180)
+		(pin "ST-LINK{USB}" input
+			(at 123.19 92.71 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -278,17 +622,27 @@
 			)
 			(uuid "1f8bebf7-2c7a-401d-bf5b-ddb1b2e1fa68")
 		)
+		(pin "SWD{SWD}" output
+			(at 148.59 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b44b70df-07dc-4cd8-a434-5c68d0d5ae9b")
+		)
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee"
-					(page "5")
+					(page "7")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 101.6 76.2)
-		(size 25.4 38.1)
+		(at 81.28 41.91)
+		(size 25.4 96.52)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -299,7 +653,7 @@
 		)
 		(uuid "ff3476d7-2f10-4f79-9864-988601c7ce1b")
 		(property "Sheetname" "Backplane"
-			(at 101.6 75.4884 0)
+			(at 81.28 41.1984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -308,7 +662,7 @@
 			)
 		)
 		(property "Sheetfile" "backplane.kicad_sch"
-			(at 101.6 114.8846 0)
+			(at 81.28 139.0146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -317,64 +671,64 @@
 			)
 		)
 		(pin "GPIOC[0..15]" input
-			(at 127 100.33 0)
+			(at 81.28 82.55 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "590059fb-ce6b-4594-a8d9-5ea16c12e994")
 		)
 		(pin "GPIOL[0..15]" input
-			(at 127 102.87 0)
+			(at 81.28 88.9 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "1244bff8-cc00-45c3-ad70-38099735e42f")
 		)
 		(pin "GPIOR[0..15]" input
-			(at 127 97.79 0)
+			(at 81.28 96.52 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "78f6447e-cc35-4bff-9181-e28e763cd973")
 		)
-		(pin "USB{ST-LINK}" input
-			(at 127 83.82 0)
+		(pin "CAN1{CAN}" bidirectional
+			(at 106.68 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8af60e00-707e-41fb-b3a6-9e7df57283ff")
+			(uuid "f5cc3410-a9f9-4327-97b1-b02ad5c607a0")
 		)
-		(pin "CAN{CAN2}" input
-			(at 127 93.98 0)
+		(pin "CAN2{CAN}" bidirectional
+			(at 106.68 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "24c9a3db-9813-4e53-8a53-5c4de532bdc0")
+			(uuid "1bb521b1-9157-430e-bc39-7309cc0c519b")
 		)
-		(pin "CAN{CAN1}" input
-			(at 127 91.44 0)
+		(pin "BACKPLANE{USB}" output
+			(at 106.68 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "384a0c46-6585-4784-8e5e-f4f98e4b7960")
+			(uuid "de418b66-6533-4278-9c6e-995fea317169")
 		)
 		(instances
 			(project "base-module"
