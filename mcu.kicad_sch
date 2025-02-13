@@ -6587,16 +6587,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 162.56) (xy 50.8 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "165794f5-1dc5-4cc0-8fa0-903d9fe09c6b")
-	)
-	(wire
-		(pts
 			(xy 127 36.83) (xy 127 39.37)
 		)
 		(stroke
@@ -7887,6 +7877,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 162.56) (xy 52.07 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab2a75e0-bd28-4410-a86a-2df1d73341bf")
+	)
+	(wire
+		(pts
 			(xy 58.42 115.57) (xy 62.23 115.57)
 		)
 		(stroke
@@ -8834,6 +8834,16 @@
 		)
 		(uuid "4e279dc4-5a7b-4576-9004-40ddb78bc408")
 	)
+	(label "SWD.~{RST}"
+		(at 52.07 162.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4edbd117-e0f2-4929-baeb-3cf8e8ec3a97")
+	)
 	(label "NRST"
 		(at 30.48 162.56 0)
 		(effects
@@ -9523,16 +9533,6 @@
 			(justify right bottom)
 		)
 		(uuid "e3822f34-c85b-4a8e-99c2-aa7e30d361f6")
-	)
-	(label "NRST"
-		(at 50.8 162.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e84509f6-f6f1-49b9-9060-391a08a6acd0")
 	)
 	(label "PE8"
 		(at 95.25 90.17 0)
@@ -10695,7 +10695,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 172.72 0)
+		(at 52.07 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10703,7 +10703,7 @@
 		(dnp no)
 		(uuid "30c2b863-6613-4174-973a-cf0a053a34ab")
 		(property "Reference" "#PWR0421"
-			(at 50.8 179.07 0)
+			(at 52.07 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10712,7 +10712,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 176.53 0)
+			(at 52.07 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10720,7 +10720,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 172.72 0)
+			(at 52.07 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10729,7 +10729,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 172.72 0)
+			(at 52.07 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10738,7 +10738,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 172.72 0)
+			(at 52.07 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13160,7 +13160,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 50.8 167.64 270)
+		(at 52.07 167.64 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13169,7 +13169,7 @@
 		(fields_autoplaced yes)
 		(uuid "717d1735-6aec-4ef4-aa01-7e68dcf12cee")
 		(property "Reference" "SW401"
-			(at 54.61 166.3699 90)
+			(at 55.88 166.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13178,7 +13178,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 54.61 168.9099 90)
+			(at 55.88 168.9099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13187,7 +13187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 167.64 0)
+			(at 57.15 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13196,7 +13196,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 55.88 167.64 0)
+			(at 57.15 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13205,7 +13205,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 50.8 167.64 0)
+			(at 52.07 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
