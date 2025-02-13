@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "TJA1044GTK_3Z")(type "KiCad")(uri "${KIPRJMOD}/lib/kicad-symbols/TJA1044GTK_3Z.kicad_sym")(options "")(descr ""))
   (lib (name "AP22652W6-7")(type "KiCad")(uri "${KIPRJMOD}/lib/kicad-symbols/AP22652W6-7.kicad_sym")(options "")(descr ""))
+  (lib (name "TL2243")(type "KiCad")(uri "${KIPRJMOD}/lib/kicad-symbols/TL2243.kicad_sym")(options "")(descr ""))
+  (lib (name "2169890001")(type "KiCad")(uri "${KIPRJMOD}/lib/kicad-symbols/2169890001.kicad_sym")(options "")(descr ""))
 )

@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "kicad-footprints")(type "KiCad")(uri "${KIPRJMOD}/lib/kicad-footprints/TL2243.pretty")(options "")(descr ""))
+  (lib (name "MOLEX_2169890001")(type "KiCad")(uri "${KIPRJMOD}/lib/kicad-footprints/MOLEX_2169890001.pretty")(options "")(descr ""))
+)
