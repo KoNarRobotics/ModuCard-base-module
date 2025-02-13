@@ -11495,16 +11495,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "847cf067-dc7c-4222-947a-165bcc9dcdfd")
+			(uuid "847cf067-dc7c-4222-947a-165bcc9dcdfe")
 		)
 		(pin "1"
-			(uuid "4aeedb0d-15a5-4bb9-b404-0b1af042e813")
+			(uuid "4aeedb0d-15a5-4bb9-b404-0b1af042e814")
 		)
 		(pin "2"
-			(uuid "b63d977d-63c0-4732-81a8-6ea6cf8e9053")
+			(uuid "b63d977d-63c0-4732-81a8-6ea6cf8e9054")
 		)
 		(pin "3"
-			(uuid "27568c2e-2a4e-412f-ac74-e2941fab6c0e")
+			(uuid "27568c2e-2a4e-412f-ac74-e2941fab6c0f")
 		)
 		(instances
 			(project ""
