@@ -797,7 +797,7 @@
 		)
 	)
 	(junction
-		(at 176.53 92.71)
+		(at 172.72 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a07e053e-4372-4f96-96a9-f4e989124363")
@@ -868,16 +868,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 92.71) (xy 176.53 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18af6780-9bf0-43c1-b5ce-fadb85b17c7c")
-	)
-	(wire
-		(pts
 			(xy 66.04 101.6) (xy 72.39 101.6)
 		)
 		(stroke
@@ -918,7 +908,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 92.71) (xy 176.53 91.44)
+			(xy 172.72 92.71) (xy 172.72 91.44)
 		)
 		(stroke
 			(width 0)
@@ -935,16 +925,6 @@
 			(type default)
 		)
 		(uuid "3ce76ff9-6a67-4ca3-8ba0-d0f1dec9e1f1")
-	)
-	(bus
-		(pts
-			(xy 63.5 95.25) (xy 63.5 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "478d05b5-6e9e-4358-b40b-ad978d2928e1")
 	)
 	(bus
 		(pts
@@ -975,6 +955,16 @@
 			(type default)
 		)
 		(uuid "6720b517-f21a-4bf1-91b6-8be7ec5db600")
+	)
+	(wire
+		(pts
+			(xy 153.67 92.71) (xy 172.72 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69cde915-273f-4237-91a0-a6543145843f")
 	)
 	(wire
 		(pts
@@ -1028,7 +1018,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 100.33) (xy 176.53 101.6)
+			(xy 172.72 100.33) (xy 172.72 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1239,7 +1229,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 176.53 101.6 0)
+		(at 172.72 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1247,7 +1237,7 @@
 		(dnp no)
 		(uuid "3bf9fdd0-a91f-4d64-b5f0-168335ad7ee6")
 		(property "Reference" "#PWR0485"
-			(at 176.53 107.95 0)
+			(at 172.72 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1256,7 +1246,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.594 103.632 0)
+			(at 172.72 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1264,7 +1254,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 101.6 0)
+			(at 172.72 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1273,7 +1263,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 101.6 0)
+			(at 172.72 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1282,7 +1272,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 101.6 0)
+			(at 172.72 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1508,7 +1498,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.634 103.632 0)
+			(at 115.57 105.664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1556,7 +1546,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 176.53 91.44 0)
+		(at 172.72 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1564,7 +1554,7 @@
 		(dnp no)
 		(uuid "f0b74cb9-f62d-4383-80dc-0fd85c126dfa")
 		(property "Reference" "#PWR0484"
-			(at 176.53 95.25 0)
+			(at 172.72 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1573,7 +1563,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 172.72 89.916 0)
+			(at 172.466 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1581,7 +1571,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 91.44 0)
+			(at 172.72 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1590,7 +1580,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 91.44 0)
+			(at 172.72 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1599,7 +1589,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 176.53 91.44 0)
+			(at 172.72 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1621,7 +1611,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0402,100nF,(2)")
-		(at 176.53 96.52 0)
+		(at 172.72 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1630,7 +1620,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd4c7f21-6cbb-4122-bd6a-b05f4fa4c237")
 		(property "Reference" "C425"
-			(at 179.07 95.25 0)
+			(at 175.26 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1639,7 +1629,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 179.07 97.155 0)
+			(at 175.26 97.155 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -1648,7 +1638,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0402"
-			(at 174.752 96.52 90)
+			(at 170.942 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1657,7 +1647,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1666,7 +1656,7 @@
 			)
 		)
 		(property "Description" "50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1675,7 +1665,7 @@
 			)
 		)
 		(property "LCSC" "C307331"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1684,7 +1674,7 @@
 			)
 		)
 		(property "Stock" "5358037"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1693,7 +1683,7 @@
 			)
 		)
 		(property "Price" "0.008USD"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1702,7 +1692,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1711,7 +1701,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1720,7 +1710,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1729,7 +1719,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1738,7 +1728,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1747,7 +1737,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1756,7 +1746,7 @@
 			)
 		)
 		(property "Part" "CL05B104KB54PNC"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1765,7 +1755,7 @@
 			)
 		)
 		(property "Voltage Rated" "50V"
-			(at 179.07 98.425 0)
+			(at 175.26 98.425 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -1774,7 +1764,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1783,7 +1773,7 @@
 			)
 		)
 		(property "Capacitance" "100nF"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1792,7 +1782,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 176.53 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)

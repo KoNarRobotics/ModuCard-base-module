@@ -6689,7 +6689,7 @@
 		)
 		(uuid "12f467da-15d6-4ffb-9749-b79a787920d6")
 	)
-	(text "C406=C407 = (CL - 4pF) * 2\n"
+	(text "C707=C708 = (CL - 4pF) * 2\n"
 		(exclude_from_sim no)
 		(at 32.385 98.425 0)
 		(effects
