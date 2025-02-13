@@ -14,7 +14,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "TL2243"
 			(at 0 0 0)
 			(effects
 				(font
@@ -22,16 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Footprint" "TL2243:TL2243"
 			(at 0 0 0)
 			(effects
 				(font
@@ -40,7 +31,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121841_E-Switch-TL2243_C273515.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Double Stack Switch"
 			(at 0 0 0)
 			(effects
 				(font
