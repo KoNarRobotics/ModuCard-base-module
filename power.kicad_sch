@@ -5028,7 +5028,7 @@
 		)
 		(uuid "86e84a29-3097-4a2e-afda-f412087657e5")
 	)
-	(text "V_{OUT} = 0.765*(1+R301/R303)"
+	(text "V_{OUT} = 0.765*(1+R302/R307)"
 		(exclude_from_sim no)
 		(at 118.745 123.19 0)
 		(effects
@@ -5039,7 +5039,7 @@
 		)
 		(uuid "9d368b20-0f44-484f-bb77-c97a7dcaad51")
 	)
-	(text "V_{OUT} = 0.765*(1+R301/R303)"
+	(text "V_{OUT} = 0.765*(1+R300/R301)"
 		(exclude_from_sim no)
 		(at 133.985 69.85 0)
 		(effects
@@ -6955,7 +6955,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "485d781c-ac91-4ad2-accf-23327a061ae6")
-		(property "Reference" "L401"
+		(property "Reference" "L301"
 			(at 128.27 90.17 90)
 			(effects
 				(font
@@ -7007,7 +7007,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "L401")
+					(reference "L301")
 					(unit 1)
 				)
 			)
