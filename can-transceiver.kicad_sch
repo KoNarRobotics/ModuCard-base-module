@@ -1,20 +1,22 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "07dc2064-744f-479e-b1dc-ae1108dc5b1b")
 	(paper "A4")
 	(title_block
-		(title "ModuCard base module")
-		(date "2025-02-25")
-		(rev "1.0.1")
+		(title "ModuCard BM STM32H562VGT6")
+		(date "2025-04-18")
+		(rev "1.0.0")
 		(company "KoNaR")
 		(comment 1 "Base project authors: Dominik Pluta, Artem Horiunov")
 		(comment 2 "Project author: <author>")
 	)
 	(lib_symbols
 		(symbol "PCM_JLCPCB-Capacitors:0402,100nF,(2)"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -75,7 +77,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "3851753"
+			(property "Stock" "5436546"
 				(at 0 0 0)
 				(effects
 					(font
@@ -204,7 +206,7 @@
 			(symbol "0402,100nF,(2)_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -0.635) (xy 1.27 -0.635)
+						(xy -1.27 0.635) (xy 1.27 0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -216,7 +218,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0.635) (xy 1.27 0.635)
+						(xy -1.27 -0.635) (xy 1.27 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -265,9 +267,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "PCM_JLCPCB-Resistors:0402,10kΩ"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -328,7 +333,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "14017682"
+			(property "Stock" "13746052"
 				(at 0 0 0)
 				(effects
 					(font
@@ -532,28 +537,31 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "TJA1044GTK_3Z:TJA1044GTK_3Z"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U4"
-				(at 12.7 6.985 0)
+			(property "Reference" "U"
+				(at 11.43 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
 			(property "Value" "TJA1044GTK_3Z"
-				(at 12.7 4.445 0)
+				(at 5.08 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Footprint" "HVSON-8-EP(3x3):HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"
+			(property "Footprint" "Package_SON:HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"
 				(at 26.67 -94.92 0)
 				(effects
 					(font
@@ -614,6 +622,24 @@
 						(type background)
 					)
 				)
+				(pin power_in line
+					(at 2.54 0 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 2.54 -5.08 0)
 					(length 2.54)
@@ -625,6 +651,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -7.62 0)
+					(length 2.54)
+					(name "RXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -650,35 +694,18 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 2.54 0 0)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
-					(at 2.54 -7.62 0)
+					(at 2.54 -12.7 0)
 					(length 2.54)
-					(name "RXD"
+					(hide yes)
+					(name "EP"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -705,24 +732,6 @@
 					)
 				)
 				(pin passive line
-					(at 22.86 -7.62 180)
-					(length 2.54)
-					(name "CANL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 22.86 -5.08 180)
 					(length 2.54)
 					(name "CANH"
@@ -733,6 +742,24 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -7.62 180)
+					(length 2.54)
+					(name "CANL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -758,31 +785,18 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -12.7 0)
-					(length 2.54) hide
-					(name "EP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -854,7 +868,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -866,7 +880,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -897,12 +911,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -993,7 +1012,20 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "CAN TRANSCEIVER"
+		(exclude_from_sim no)
+		(at 149.86 76.835 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "3215fd85-4ab3-4cb4-8a81-b6cbace41cbc")
 	)
 	(junction
 		(at 163.83 92.71)
@@ -1333,18 +1365,6 @@
 		)
 		(uuid "f64d4968-3fd9-4a89-b674-dc3f45db6b69")
 	)
-	(text "CAN TRANSCEIVER"
-		(exclude_from_sim no)
-		(at 149.86 76.835 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-		)
-		(uuid "3215fd85-4ab3-4cb4-8a81-b6cbace41cbc")
-	)
 	(label "CAN.+"
 		(at 189.23 101.6 180)
 		(effects
@@ -1416,7 +1436,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "393b7785-9df8-4513-b4e3-cd260699f18a")
-		(property "Reference" "#PWR0601"
+		(property "Reference" "#PWR501"
 			(at 163.83 93.98 0)
 			(effects
 				(font
@@ -1466,11 +1486,11 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/0158e235-e8c1-4e7e-a900-a22642d17049"
-					(reference "#PWR0601")
+					(reference "#PWR601")
 					(unit 1)
 				)
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f4a4c31-63d6-4264-8452-81b45fffd897"
-					(reference "#PWR0501")
+					(reference "#PWR501")
 					(unit 1)
 				)
 			)
@@ -1485,7 +1505,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6bc7aa1c-6c5a-4046-b112-faee639b0cc6")
-		(property "Reference" "C601"
+		(property "Reference" "C501"
 			(at 171.45 85.09 90)
 			(effects
 				(font
@@ -1537,7 +1557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "3851753"
+		(property "Stock" "5436546"
 			(at 171.45 92.71 0)
 			(effects
 				(font
@@ -1681,7 +1701,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "76768303-3a70-42dc-89ec-cdb16028d757")
-		(property "Reference" "U600"
+		(property "Reference" "U500"
 			(at 151.13 89.535 0)
 			(effects
 				(font
@@ -1795,7 +1815,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "796fba86-7470-47ec-84fc-5980d633fab7")
-		(property "Reference" "R600"
+		(property "Reference" "R500"
 			(at 165.1 114.3 0)
 			(effects
 				(font
@@ -1849,7 +1869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "14017682"
+		(property "Stock" "13746052"
 			(at 163.83 114.3 0)
 			(effects
 				(font
@@ -2021,7 +2041,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8de1a2f1-ff57-4c0d-8b3d-103cef5d80ff")
-		(property "Reference" "#PWR0600"
+		(property "Reference" "#PWR500"
 			(at 138.43 93.98 0)
 			(effects
 				(font
@@ -2071,11 +2091,11 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/0158e235-e8c1-4e7e-a900-a22642d17049"
-					(reference "#PWR0600")
+					(reference "#PWR600")
 					(unit 1)
 				)
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f4a4c31-63d6-4264-8452-81b45fffd897"
-					(reference "#PWR0500")
+					(reference "#PWR500")
 					(unit 1)
 				)
 			)
@@ -2090,7 +2110,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "98dfec42-d4d1-4c21-91ac-80417899282f")
-		(property "Reference" "C600"
+		(property "Reference" "C500"
 			(at 132.08 85.09 90)
 			(effects
 				(font
@@ -2142,7 +2162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "3851753"
+		(property "Stock" "5436546"
 			(at 132.08 92.71 0)
 			(effects
 				(font
@@ -2286,7 +2306,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cd533eae-7dbe-4218-a903-4f171e7bc9d2")
-		(property "Reference" "#PWR0602"
+		(property "Reference" "#PWR502"
 			(at 125.73 100.33 0)
 			(effects
 				(font
@@ -2336,11 +2356,11 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/0158e235-e8c1-4e7e-a900-a22642d17049"
-					(reference "#PWR0602")
+					(reference "#PWR602")
 					(unit 1)
 				)
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f4a4c31-63d6-4264-8452-81b45fffd897"
-					(reference "#PWR0502")
+					(reference "#PWR502")
 					(unit 1)
 				)
 			)
@@ -2355,7 +2375,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d58dca88-feca-4074-89df-2ea7c7728967")
-		(property "Reference" "#PWR0605"
+		(property "Reference" "#PWR505"
 			(at 163.83 125.73 0)
 			(effects
 				(font
@@ -2405,11 +2425,11 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/0158e235-e8c1-4e7e-a900-a22642d17049"
-					(reference "#PWR0605")
+					(reference "#PWR605")
 					(unit 1)
 				)
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f4a4c31-63d6-4264-8452-81b45fffd897"
-					(reference "#PWR0505")
+					(reference "#PWR505")
 					(unit 1)
 				)
 			)
@@ -2425,7 +2445,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e54ac19f-1883-4d72-8f10-b8f5606cefc6")
-		(property "Reference" "#PWR0603"
+		(property "Reference" "#PWR503"
 			(at 180.34 100.33 0)
 			(effects
 				(font
@@ -2475,11 +2495,11 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/0158e235-e8c1-4e7e-a900-a22642d17049"
-					(reference "#PWR0603")
+					(reference "#PWR603")
 					(unit 1)
 				)
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f4a4c31-63d6-4264-8452-81b45fffd897"
-					(reference "#PWR0503")
+					(reference "#PWR503")
 					(unit 1)
 				)
 			)
@@ -2494,7 +2514,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef29bc43-0cd3-4b16-b26a-716d92add442")
-		(property "Reference" "#PWR0604"
+		(property "Reference" "#PWR504"
 			(at 138.43 124.46 0)
 			(effects
 				(font
@@ -2544,11 +2564,11 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/0158e235-e8c1-4e7e-a900-a22642d17049"
-					(reference "#PWR0604")
+					(reference "#PWR604")
 					(unit 1)
 				)
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f4a4c31-63d6-4264-8452-81b45fffd897"
-					(reference "#PWR0504")
+					(reference "#PWR504")
 					(unit 1)
 				)
 			)

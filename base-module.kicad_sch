@@ -1,13 +1,13 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "090a8e41-87a8-4fb1-998b-60a2c0dc4cee")
 	(paper "A4")
 	(title_block
-		(title "ModuCard base module")
-		(date "2025-02-25")
-		(rev "1.0.1")
+		(title "ModuCard BM STM32H562VGT6")
+		(date "2025-04-18")
+		(rev "1.0.0")
 		(company "KoNaR")
 		(comment 1 "Base project authors: Dominik Pluta, Artem Horiunov")
 		(comment 2 "Project author: <author>")
@@ -171,6 +171,10 @@
 	(sheet
 		(at 123.19 133.35)
 		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -199,23 +203,23 @@
 		)
 		(pin "CAN{RX TX}" input
 			(at 148.59 137.16 0)
+			(uuid "4671fdb0-d0e0-441d-8d1d-4860636d85e9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4671fdb0-d0e0-441d-8d1d-4860636d85e9")
 		)
 		(pin "CAN{CAN}" bidirectional
 			(at 123.19 137.16 180)
+			(uuid "858eda0b-4235-4ae8-86e3-335d4ad9a1da")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "858eda0b-4235-4ae8-86e3-335d4ad9a1da")
 		)
 		(instances
 			(project "base-module"
@@ -228,6 +232,10 @@
 	(sheet
 		(at 81.28 147.32)
 		(size 25.4 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -266,6 +274,10 @@
 	(sheet
 		(at 123.19 119.38)
 		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -294,23 +306,23 @@
 		)
 		(pin "CAN{RX TX}" input
 			(at 148.59 123.19 0)
+			(uuid "2ad324a7-4e76-4def-a2aa-f7156431611c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2ad324a7-4e76-4def-a2aa-f7156431611c")
 		)
 		(pin "CAN{CAN}" bidirectional
 			(at 123.19 123.19 180)
+			(uuid "dd8404cf-fd75-41cc-aa36-6f2c3a0e4af5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "dd8404cf-fd75-41cc-aa36-6f2c3a0e4af5")
 		)
 		(instances
 			(project "base-module"
@@ -323,6 +335,10 @@
 	(sheet
 		(at 123.19 44.45)
 		(size 25.4 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -352,23 +368,23 @@
 		)
 		(pin "BACKPLANE{USB}" input
 			(at 123.19 49.53 180)
+			(uuid "49cd1327-0574-4555-b98d-686ad06add1f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "49cd1327-0574-4555-b98d-686ad06add1f")
 		)
 		(pin "EXTUSB{USB}" output
 			(at 123.19 55.88 180)
+			(uuid "c146d2d2-99d4-47de-b999-c91753c99574")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c146d2d2-99d4-47de-b999-c91753c99574")
 		)
 		(instances
 			(project "base-module"
@@ -381,6 +397,10 @@
 	(sheet
 		(at 161.29 41.91)
 		(size 44.45 99.06)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -410,53 +430,53 @@
 		)
 		(pin "QSPI1{QSPI}" bidirectional
 			(at 161.29 107.95 180)
+			(uuid "0a967f7e-bc5a-4548-8588-a3f32ad6b6f8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0a967f7e-bc5a-4548-8588-a3f32ad6b6f8")
 		)
 		(pin "CAN2{RX TX}" input
 			(at 161.29 137.16 180)
+			(uuid "8c8ec780-1712-44db-9376-b03ba592cd9d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8c8ec780-1712-44db-9376-b03ba592cd9d")
 		)
 		(pin "CAN1{RX TX}" input
 			(at 161.29 123.19 180)
+			(uuid "f0869290-4d95-416e-9491-be40cdf216cd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f0869290-4d95-416e-9491-be40cdf216cd")
 		)
 		(pin "SWD{SWD}" input
 			(at 161.29 88.9 180)
+			(uuid "b5a0d17e-17b9-488f-996c-746b62a94522")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b5a0d17e-17b9-488f-996c-746b62a94522")
 		)
 		(pin "USB_MCU{USB}" input
 			(at 161.29 72.39 180)
+			(uuid "39375a4c-9c10-4301-9b74-766af280eb37")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "39375a4c-9c10-4301-9b74-766af280eb37")
 		)
 		(instances
 			(project "base-module"
@@ -469,6 +489,10 @@
 	(sheet
 		(at 123.19 64.77)
 		(size 25.4 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -498,33 +522,33 @@
 		)
 		(pin "USBIN1{USB}" input
 			(at 123.19 67.31 180)
+			(uuid "70ba8c34-1228-4bf6-9d23-9d1360b2bc8c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "70ba8c34-1228-4bf6-9d23-9d1360b2bc8c")
 		)
 		(pin "USBOUT1{USB}" output
 			(at 123.19 77.47 180)
+			(uuid "bc0f17fd-1568-4cfd-a9dc-839741c5fc8e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bc0f17fd-1568-4cfd-a9dc-839741c5fc8e")
 		)
 		(pin "USB_MCU{USB}" input
 			(at 148.59 72.39 0)
+			(uuid "0c956685-101a-4f07-b7bf-c720f0663eeb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0c956685-101a-4f07-b7bf-c720f0663eeb")
 		)
 		(instances
 			(project "base-module"
@@ -537,6 +561,10 @@
 	(sheet
 		(at 123.19 104.14)
 		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -566,13 +594,13 @@
 		)
 		(pin "QSPI{QSPI}" bidirectional
 			(at 148.59 107.95 0)
+			(uuid "443041a0-7600-4d4d-a6ad-970474c79d47")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "443041a0-7600-4d4d-a6ad-970474c79d47")
 		)
 		(instances
 			(project "base-module"
@@ -585,6 +613,10 @@
 	(sheet
 		(at 123.19 86.36)
 		(size 25.4 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -614,23 +646,23 @@
 		)
 		(pin "ST-LINK{USB}" input
 			(at 123.19 92.71 180)
+			(uuid "1f8bebf7-2c7a-401d-bf5b-ddb1b2e1fa68")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1f8bebf7-2c7a-401d-bf5b-ddb1b2e1fa68")
 		)
 		(pin "SWD{SWD}" output
 			(at 148.59 88.9 0)
+			(uuid "b44b70df-07dc-4cd8-a434-5c68d0d5ae9b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b44b70df-07dc-4cd8-a434-5c68d0d5ae9b")
 		)
 		(instances
 			(project "base-module"
@@ -643,6 +675,10 @@
 	(sheet
 		(at 81.28 41.91)
 		(size 25.4 99.06)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -672,63 +708,63 @@
 		)
 		(pin "GPIOC[0..15]" input
 			(at 81.28 82.55 180)
+			(uuid "590059fb-ce6b-4594-a8d9-5ea16c12e994")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "590059fb-ce6b-4594-a8d9-5ea16c12e994")
 		)
 		(pin "GPIOL[0..15]" input
 			(at 81.28 88.9 180)
+			(uuid "1244bff8-cc00-45c3-ad70-38099735e42f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1244bff8-cc00-45c3-ad70-38099735e42f")
 		)
 		(pin "GPIOR[0..15]" input
 			(at 81.28 96.52 180)
+			(uuid "78f6447e-cc35-4bff-9181-e28e763cd973")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "78f6447e-cc35-4bff-9181-e28e763cd973")
 		)
 		(pin "CAN1{CAN}" bidirectional
 			(at 106.68 123.19 0)
+			(uuid "f5cc3410-a9f9-4327-97b1-b02ad5c607a0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f5cc3410-a9f9-4327-97b1-b02ad5c607a0")
 		)
 		(pin "CAN2{CAN}" bidirectional
 			(at 106.68 137.16 0)
+			(uuid "1bb521b1-9157-430e-bc39-7309cc0c519b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1bb521b1-9157-430e-bc39-7309cc0c519b")
 		)
 		(pin "BACKPLANE{USB}" output
 			(at 106.68 49.53 0)
+			(uuid "de418b66-6533-4278-9c6e-995fea317169")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "de418b66-6533-4278-9c6e-995fea317169")
 		)
 		(instances
 			(project "base-module"
@@ -743,4 +779,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
