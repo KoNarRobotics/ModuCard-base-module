@@ -1,26 +1,22 @@
 (kicad_sch
-	(version 20250114)
+	(version 20231120)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "8.0")
 	(uuid "ba51c50f-f60f-4e62-bc07-1f5c7036722d")
 	(paper "A4")
 	(title_block
-		(title "ModuCard BM STM32H562VGT6")
-		(date "2025-04-18")
-		(rev "1.0.0")
+		(title "ModuCard base module")
+		(date "2025-02-25")
+		(rev "1.0.1")
 		(company "KoNaR")
 		(comment 1 "Base project authors: Dominik Pluta, Artem Horiunov")
 		(comment 2 "Project author: <author>")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
+				(offset 0.762) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -118,152 +114,11 @@
 					)
 				)
 			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Fuse"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "F"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Fuse"
-				(at -1.905 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Fuse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "fuse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*Fuse*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Fuse_0_1"
-				(rectangle
-					(start -0.762 -2.54)
-					(end 0.762 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fuse_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
 		)
 		(symbol "Device:L"
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -330,32 +185,8 @@
 			)
 			(symbol "L_0_1"
 				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
+					(start 0 -2.54)
+					(mid 0.6323 -1.905)
 					(end 0 -1.27)
 					(stroke
 						(width 0)
@@ -367,8 +198,32 @@
 				)
 				(arc
 					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
+					(mid 0.6323 -0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 0.635)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 1.905)
+					(end 0 2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -416,16 +271,11 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
+				(offset 0.254) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -543,18 +393,12 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "Jumper:SolderJumper_2_Bridged"
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim yes)
-			(in_bom no)
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "JP"
 				(at 0 2.032 0)
@@ -629,6 +473,30 @@
 						(type outline)
 					)
 				)
+				(arc
+					(start -0.254 1.016)
+					(mid -1.2656 0)
+					(end -0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 1.016)
+					(mid -1.2656 0)
+					(end -0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
 						(xy -0.254 1.016) (xy -0.254 -1.016)
@@ -641,54 +509,6 @@
 						(type none)
 					)
 				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0.254 1.016) (xy 0.254 -1.016)
@@ -699,6 +519,30 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(arc
+					(start 0.254 -1.016)
+					(mid 1.2656 0)
+					(end 0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 -1.016)
+					(mid 1.2656 0)
+					(end 0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 			)
@@ -740,12 +584,9 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "PCM_JLCPCB-Capacitors:0402,100nF,(2)"
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
 				(offset 0)
 			)
@@ -806,7 +647,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "5436546"
+			(property "Stock" "5427590"
 				(at 0 0 0)
 				(effects
 					(font
@@ -935,7 +776,7 @@
 			(symbol "0402,100nF,(2)_0_1"
 				(polyline
 					(pts
-						(xy -1.27 0.635) (xy 1.27 0.635)
+						(xy -1.27 -0.635) (xy 1.27 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -947,7 +788,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -0.635) (xy 1.27 -0.635)
+						(xy -1.27 0.635) (xy 1.27 0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -996,12 +837,9 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "PCM_JLCPCB-Capacitors:0603,10uF,(2)"
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
 				(offset 0)
 			)
@@ -1062,7 +900,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "2203364"
+			(property "Stock" "4293394"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1071,7 +909,7 @@
 					(hide yes)
 				)
 			)
-			(property "Price" "0.020USD"
+			(property "Price" "0.017USD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1191,7 +1029,7 @@
 			(symbol "0603,10uF,(2)_0_1"
 				(polyline
 					(pts
-						(xy -1.27 0.635) (xy 1.27 0.635)
+						(xy -1.27 -0.635) (xy 1.27 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -1203,7 +1041,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -0.635) (xy 1.27 -0.635)
+						(xy -1.27 0.635) (xy 1.27 0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -1252,12 +1090,9 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "PCM_JLCPCB-Capacitors:0603,22uF"
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
 				(offset 0)
 			)
@@ -1318,7 +1153,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "4784939"
+			(property "Stock" "6715457"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1327,7 +1162,7 @@
 					(hide yes)
 				)
 			)
-			(property "Price" "0.011USD"
+			(property "Price" "0.010USD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1447,7 +1282,7 @@
 			(symbol "0603,22uF_0_1"
 				(polyline
 					(pts
-						(xy -1.27 0.635) (xy 1.27 0.635)
+						(xy -1.27 -0.635) (xy 1.27 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -1459,7 +1294,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -0.635) (xy 1.27 -0.635)
+						(xy -1.27 0.635) (xy 1.27 0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -1508,12 +1343,9 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
-		(symbol "PCM_JLCPCB-Diodes:LED,0603,Red"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "PCM_JLCPCB-Diodes:LED,0603,Green"
+			(pin_numbers hide)
 			(pin_names
 				(offset 0)
 			)
@@ -1529,7 +1361,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Red"
+			(property "Value" "Green"
 				(at 2.032 -1.2122 0)
 				(effects
 					(font
@@ -1547,7 +1379,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf"
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2207051802_Everlight-Elec-19-217-GHC-YR1S2-6T_C2986059.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1556,7 +1388,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "-40°C~+85°C Red 0603 LED Indication - Discrete ROHS"
+			(property "Description" "0603 LED Indication - Discrete ROHS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1565,7 +1397,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC" "C2286"
+			(property "LCSC" "C2986059"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1574,7 +1406,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "3289269"
+			(property "Stock" "276928"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1583,7 +1415,7 @@
 					(hide yes)
 				)
 			)
-			(property "Price" "0.009USD"
+			(property "Price" "0.021USD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1610,7 +1442,7 @@
 					(hide yes)
 				)
 			)
-			(property "Attrition Qty" "6"
+			(property "Attrition Qty" "8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1619,7 +1451,7 @@
 					(hide yes)
 				)
 			)
-			(property "Class" "Basic Component"
+			(property "Class" "Preferred Component"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1628,7 +1460,7 @@
 					(hide yes)
 				)
 			)
-			(property "Category" "Optocouplers & LEDs & Infrared,Light Emitting Diodes (LED)"
+			(property "Category" "Optocoupler/LED/Digital Tube/Photoelectric Device,Light Emitting Diodes (LED)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1637,7 +1469,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "Hubei KENTO Elec"
+			(property "Manufacturer" "Everlight Elec"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1646,7 +1478,7 @@
 					(hide yes)
 				)
 			)
-			(property "Part" "KT-0603R"
+			(property "Part" "19-217/GHC-YR1S2/6T"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1664,25 +1496,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "LED,0603,Red_0_1"
+			(symbol "LED,0603,Green_0_1"
 				(polyline
 					(pts
-						(xy -1.905 0) (xy -3.429 1.524) (xy -3.429 1.016) (xy -3.429 1.524) (xy -2.921 1.524)
+						(xy -1.27 -1.27) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -1.27) (xy -3.429 0.254) (xy -3.429 -0.254) (xy -3.429 0.254) (xy -2.921 0.254)
-					)
-					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1703,10 +1523,22 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy 1.27 -1.27)
+						(xy -1.905 -1.27) (xy -3.429 0.254) (xy -3.429 -0.254) (xy -3.429 0.254) (xy -2.921 0.254)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -3.429 1.524) (xy -3.429 1.016) (xy -3.429 1.524) (xy -2.921 1.524)
+					)
+					(stroke
+						(width 0.127)
 						(type default)
 					)
 					(fill
@@ -1714,25 +1546,7 @@
 					)
 				)
 			)
-			(symbol "LED,0603,Red_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			(symbol "LED,0603,Green_1_1"
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 3.81)
@@ -1751,13 +1565,28 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "PCM_JLCPCB-Resistors:0402,10kΩ"
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
 				(offset 0)
 			)
@@ -1818,7 +1647,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "13746052"
+			(property "Stock" "7034931"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2022,12 +1851,9 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "PCM_JLCPCB-Resistors:0402,2.2kΩ"
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
 				(offset 0)
 			)
@@ -2088,7 +1914,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "2234263"
+			(property "Stock" "750885"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2292,12 +2118,9 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "PCM_JLCPCB-Resistors:0402,220Ω"
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
 				(offset 0)
 			)
@@ -2358,7 +2181,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "927669"
+			(property "Stock" "735848"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2562,12 +2385,9 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "PCM_JLCPCB-Resistors:0402,470Ω"
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
 				(offset 0)
 			)
@@ -2628,7 +2448,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "911336"
+			(property "Stock" "703987"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2832,7 +2652,210 @@
 					)
 				)
 			)
-			(embedded_fonts no)
+		)
+		(symbol "PCM_JLCPCB-Variable-Resistors:Fuse,1.5A"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 1.778 0.834 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1.5A"
+				(at 1.778 -1.2122 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:F_0603"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2202211730_TLC-Electronic-F06F1-5_C2924957.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "0603 Disposable fuses ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C2924957"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Stock" "450"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.048USD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Minimum Qty" "5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Attrition Qty" "4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Class" "Preferred Component"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Category" "TVS/Fuse/Board Level Protection,Fuses"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TLC Electronic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Part" "F06F1.5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "F_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse,1.5A_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse,1.5A_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
 		)
 		(symbol "Regulator_Switching:TPS563200"
 			(exclude_from_sim no)
@@ -2917,42 +2940,6 @@
 			)
 			(symbol "TPS563200_1_1"
 				(pin power_in line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at 0 -7.62 90)
 					(length 2.54)
 					(name "GND"
@@ -2988,17 +2975,17 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 10.16 0 180)
+				(pin power_in line
+					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "VBST"
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3024,18 +3011,49 @@
 						)
 					)
 				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "VBST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-				(hide yes)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3107,7 +3125,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -3119,7 +3137,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -3150,17 +3168,12 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-				(hide yes)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3232,7 +3245,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -3244,7 +3257,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -3275,17 +3288,12 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-				(hide yes)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3357,7 +3365,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -3369,7 +3377,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -3400,17 +3408,12 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-				(hide yes)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3501,17 +3504,12 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-				(hide yes)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3602,144 +3600,7 @@
 					)
 				)
 			)
-			(embedded_fonts no)
 		)
-	)
-	(rectangle
-		(start 27.94 93.98)
-		(end 190.5 144.78)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 12c3766a-1930-4faf-bc34-5dbcd9f6620c)
-	)
-	(rectangle
-		(start 193.04 93.98)
-		(end 271.78 144.78)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 6a872869-2a64-49f2-94dd-e16983fb93af)
-	)
-	(rectangle
-		(start 27.94 39.37)
-		(end 271.78 91.44)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid eb0c8937-9514-4189-a210-9e2bb254e2d0)
-	)
-	(text "V_{OUT} = 0.765*(1+33k2/10k) = 3.3V"
-		(exclude_from_sim no)
-		(at 114.935 143.51 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4b4c78c5-6d6a-444a-a8a6-73c8216c0469")
-	)
-	(text "Max expected \ncurrent = 1.2A"
-		(exclude_from_sim no)
-		(at 42.545 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5fb0d14f-e063-4b3d-a9a9-d8b46e95c11c")
-	)
-	(text "V_{OUT} = 0.765*(1+R302/R307)"
-		(exclude_from_sim no)
-		(at 114.935 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9d368b20-0f44-484f-bb77-c97a7dcaad51")
-	)
-	(text "Target I_{LED} = 5mA"
-		(exclude_from_sim no)
-		(at 202.946 143.256 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a44c1cfa-acdf-4491-8975-11e486c3aa9e")
-	)
-	(text "V_{OUT} = 0.765*(1+R300/R301)"
-		(exclude_from_sim no)
-		(at 130.175 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b4d19893-25a6-4884-bf5b-97ba2e64aae1")
-	)
-	(text "5V DC/DC CONVERTER"
-		(exclude_from_sim no)
-		(at 51.435 43.815 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-		)
-		(uuid "bf5e0ae1-1246-4426-a167-9d73f4a13787")
-	)
-	(text "V_{OUT} = 0.765*(1+54k9/10k) = 4.96V"
-		(exclude_from_sim no)
-		(at 130.175 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e749b488-849c-48be-8518-10f55304cc29")
-	)
-	(text "POWER INDICATOR LEDs"
-		(exclude_from_sim no)
-		(at 218.186 98.298 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-		)
-		(uuid "ea37a9d3-77fa-49fe-90a4-4aadfa9b2a10")
-	)
-	(text "3V3 DC/DC CONVERTER"
-		(exclude_from_sim no)
-		(at 52.578 98.044 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-		)
-		(uuid "f7f49b20-5d32-49c7-9d14-94c1adc6c6d3")
 	)
 	(junction
 		(at 179.07 113.03)
@@ -3772,12 +3633,6 @@
 		(uuid "48f94334-e4ed-4dc9-be5b-b3f4058a31af")
 	)
 	(junction
-		(at 168.91 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5d4bd8ec-96d2-4d5b-bbbd-2ab8d91de6d2")
-	)
-	(junction
 		(at 68.58 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3788,6 +3643,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "73fbe240-b2f1-4f1f-8c92-8eedf1547f28")
+	)
+	(junction
+		(at 168.91 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c2abb4f-9207-4e93-9d11-10d6855c637f")
 	)
 	(junction
 		(at 81.28 59.69)
@@ -4463,6 +4324,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 110.49) (xy 168.91 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9eac69de-b332-49dd-beec-34ed51833419")
+	)
+	(wire
+		(pts
 			(xy 165.1 59.69) (xy 184.15 59.69)
 		)
 		(stroke
@@ -4500,16 +4371,6 @@
 			(type default)
 		)
 		(uuid "a62828b8-e8e5-4680-b23c-9cb99311fab1")
-	)
-	(wire
-		(pts
-			(xy 168.91 113.03) (xy 179.07 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a68e9254-c6fd-478f-947b-a73f7d455ea2")
 	)
 	(wire
 		(pts
@@ -4620,6 +4481,16 @@
 			(type default)
 		)
 		(uuid "c0869208-3e47-46cb-ae52-e0221ff70828")
+	)
+	(wire
+		(pts
+			(xy 168.91 113.03) (xy 179.07 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8f52cb3-02cf-4f46-8a97-6ca4ffa5bf99")
 	)
 	(wire
 		(pts
@@ -4861,6 +4732,142 @@
 		)
 		(uuid "ffea1d42-34cd-4cc9-85b7-a6bf20d0ac1d")
 	)
+	(rectangle
+		(start 27.94 93.98)
+		(end 190.5 144.78)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 12c3766a-1930-4faf-bc34-5dbcd9f6620c)
+	)
+	(rectangle
+		(start 193.04 93.98)
+		(end 271.78 144.78)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6a872869-2a64-49f2-94dd-e16983fb93af)
+	)
+	(rectangle
+		(start 27.94 39.37)
+		(end 271.78 91.44)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid eb0c8937-9514-4189-a210-9e2bb254e2d0)
+	)
+	(text "V_{OUT} = 0.765*(1+33k2/10k) = 3.3V"
+		(exclude_from_sim no)
+		(at 114.935 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4b4c78c5-6d6a-444a-a8a6-73c8216c0469")
+	)
+	(text "Max expected \ncurrent = 1.2A"
+		(exclude_from_sim no)
+		(at 42.545 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5fb0d14f-e063-4b3d-a9a9-d8b46e95c11c")
+	)
+	(text "V_{OUT} = 0.765*(1+R302/R307)"
+		(exclude_from_sim no)
+		(at 114.935 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9d368b20-0f44-484f-bb77-c97a7dcaad51")
+	)
+	(text "Target I_{LED} = 5mA"
+		(exclude_from_sim no)
+		(at 202.946 143.256 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a44c1cfa-acdf-4491-8975-11e486c3aa9e")
+	)
+	(text "V_{OUT} = 0.765*(1+R300/R301)"
+		(exclude_from_sim no)
+		(at 130.175 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b4d19893-25a6-4884-bf5b-97ba2e64aae1")
+	)
+	(text "5V DC/DC CONVERTER"
+		(exclude_from_sim no)
+		(at 51.435 43.815 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "bf5e0ae1-1246-4426-a167-9d73f4a13787")
+	)
+	(text "V_{OUT} = 0.765*(1+54k9/10k) = 4.96V"
+		(exclude_from_sim no)
+		(at 130.175 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e749b488-849c-48be-8518-10f55304cc29")
+	)
+	(text "POWER INDICATOR LEDs"
+		(exclude_from_sim no)
+		(at 218.186 98.298 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "ea37a9d3-77fa-49fe-90a4-4aadfa9b2a10")
+	)
+	(text "3V3 DC/DC CONVERTER"
+		(exclude_from_sim no)
+		(at 52.578 98.044 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "f7f49b20-5d32-49c7-9d14-94c1adc6c6d3")
+	)
 	(label "+3V3_UNPROTEC"
 		(at 132.08 113.03 0)
 		(effects
@@ -4942,166 +4949,6 @@
 		(uuid "e3d59040-e599-47f6-9cf5-0e65d8a360f4")
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Red")
-		(at 228.6 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0649603e-5a9b-4253-8933-fb146c73a51b")
-		(property "Reference" "D401"
-			(at 231.14 115.4746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Red"
-			(at 231.14 118.0147 0)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:D_0603"
-			(at 226.822 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-40°C~+85°C Red 0603 LED Indication - Discrete ROHS"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2286"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" "3289269"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.009USD"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" "SMT"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Attrition Qty" "6"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" "Optocouplers & LEDs & Infrared,Light Emitting Diodes (LED)"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Hubei KENTO Elec"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "KT-0603R"
-			(at 228.6 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9ffcaf99-4164-49b1-ac10-33dedfbf1287")
-		)
-		(pin "1"
-			(uuid "9126eb29-5d2a-4c3c-bbf5-f0d63e15f43b")
-		)
-		(instances
-			(project "base-module"
-				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "D401")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 154.94 80.01 0)
 		(unit 1)
@@ -5110,7 +4957,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "07a7d92e-897a-4a65-8b03-c0b6e190bc89")
-		(property "Reference" "#PWR308"
+		(property "Reference" "#PWR0308"
 			(at 154.94 86.36 0)
 			(effects
 				(font
@@ -5160,7 +5007,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR308")
+					(reference "#PWR0308")
 					(unit 1)
 				)
 			)
@@ -5229,7 +5076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "2203364"
+		(property "Stock" "4293394"
 			(at 55.88 124.46 0)
 			(effects
 				(font
@@ -5238,7 +5085,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.020USD"
+		(property "Price" "0.017USD"
 			(at 55.88 124.46 0)
 			(effects
 				(font
@@ -5370,7 +5217,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "184309da-1c81-450a-bd40-05d30c05aa68")
-		(property "Reference" "#PWR301"
+		(property "Reference" "#PWR0301"
 			(at 62.23 60.96 0)
 			(effects
 				(font
@@ -5420,7 +5267,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR301")
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
@@ -5443,7 +5290,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS563200"
+		(property "Value" "TPS563201DDCR"
 			(at 81.28 108.585 0)
 			(effects
 				(font
@@ -5569,7 +5416,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "2203364"
+		(property "Stock" "4293394"
 			(at 48.26 124.46 0)
 			(effects
 				(font
@@ -5578,7 +5425,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.020USD"
+		(property "Price" "0.017USD"
 			(at 48.26 124.46 0)
 			(effects
 				(font
@@ -5776,7 +5623,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e642ddb-0702-4e9e-ac25-c60bff2df892")
-		(property "Reference" "#PWR306"
+		(property "Reference" "#PWR0306"
 			(at 95.25 86.36 0)
 			(effects
 				(font
@@ -5826,7 +5673,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR306")
+					(reference "#PWR0306")
 					(unit 1)
 				)
 			)
@@ -5895,7 +5742,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "2203364"
+		(property "Stock" "4293394"
 			(at 54.61 71.12 0)
 			(effects
 				(font
@@ -5904,7 +5751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.020USD"
+		(property "Price" "0.017USD"
 			(at 54.61 71.12 0)
 			(effects
 				(font
@@ -6028,74 +5875,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 41.91 59.69 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "381fd40c-de4d-412f-a589-5d726bcb697e")
-		(property "Reference" "F300"
-			(at 41.91 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 41.91 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0603"
-			(at 41.91 61.468 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 41.91 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 41.91 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4d04d68b-685a-4550-ad18-f670146af676")
-		)
-		(pin "2"
-			(uuid "8d215c43-9dcd-4957-8f1f-070931123c17")
-		)
-		(instances
-			(project ""
-				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "F300")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0402,100nF,(2)")
 		(at 110.49 115.57 90)
 		(unit 1)
@@ -6156,7 +5935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "5436546"
+		(property "Stock" "5427590"
 			(at 110.49 115.57 0)
 			(effects
 				(font
@@ -6288,6 +6067,166 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Green")
+		(at 228.6 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4338155c-aeab-48f0-8b61-1e0dfe6a3a7d")
+		(property "Reference" "D401"
+			(at 231.14 115.4746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Green"
+			(at 231.14 118.0147 0)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_0603"
+			(at 226.822 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2207051802_Everlight-Elec-19-217-GHC-YR1S2-6T_C2986059.pdf"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0603 LED Indication - Discrete ROHS"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2986059"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "276928"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.021USD"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "8"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Optocoupler/LED/Digital Tube/Photoelectric Device,Light Emitting Diodes (LED)"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Everlight Elec"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "19-217/GHC-YR1S2/6T"
+			(at 228.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13b612e2-0430-4971-a688-6777bcfdb631")
+		)
+		(pin "2"
+			(uuid "d471951b-529e-4b15-b79e-24e81f870fda")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
+					(reference "D401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 204.47 58.42 0)
 		(unit 1)
@@ -6362,7 +6301,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "46754063-375e-44ae-8e62-45fb05d00a4f")
-		(property "Reference" "#PWR315"
+		(property "Reference" "#PWR0315"
 			(at 48.26 114.3 0)
 			(effects
 				(font
@@ -6412,7 +6351,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR315")
+					(reference "#PWR0315")
 					(unit 1)
 				)
 			)
@@ -6481,7 +6420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "5436546"
+		(property "Stock" "5427590"
 			(at 63.5 124.46 0)
 			(effects
 				(font
@@ -6631,7 +6570,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "3.3uH"
 			(at 124.46 110.49 90)
 			(effects
 				(font
@@ -6657,7 +6596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "DMBJ CXP0420-3R3M-AG(3.3UH)"
 			(at 124.46 113.03 0)
 			(effects
 				(font
@@ -6690,7 +6629,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "53309034-685b-4efb-b065-ea25b9d045f5")
-		(property "Reference" "#FLG301"
+		(property "Reference" "#FLG0301"
 			(at 194.31 55.245 0)
 			(effects
 				(font
@@ -6740,7 +6679,7 @@
 		(instances
 			(project ""
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#FLG301")
+					(reference "#FLG0301")
 					(unit 1)
 				)
 			)
@@ -6755,7 +6694,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a5075e2-d4a7-4935-9c25-b86d5e55454e")
-		(property "Reference" "#PWR309"
+		(property "Reference" "#PWR0309"
 			(at 165.1 86.36 0)
 			(effects
 				(font
@@ -6805,7 +6744,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR309")
+					(reference "#PWR0309")
 					(unit 1)
 				)
 			)
@@ -6828,7 +6767,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Bridged"
+		(property "Value" "Test Buck Vout"
 			(at 160.02 109.22 0)
 			(effects
 				(font
@@ -6888,7 +6827,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5db10143-4077-41e4-bc95-0f7fc2d5ce75")
-		(property "Reference" "#PWR435"
+		(property "Reference" "#PWR0435"
 			(at 245.11 114.3 0)
 			(effects
 				(font
@@ -6938,7 +6877,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR435")
+					(reference "#PWR0435")
 					(unit 1)
 				)
 			)
@@ -6953,7 +6892,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5dc9355a-8aeb-48cb-9c3e-2e5f4c3e6a0d")
-		(property "Reference" "#PWR427"
+		(property "Reference" "#PWR0427"
 			(at 212.09 139.7 0)
 			(effects
 				(font
@@ -7003,7 +6942,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR427")
+					(reference "#PWR0427")
 					(unit 1)
 				)
 			)
@@ -7018,7 +6957,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5de50065-0970-49a3-918a-38fccc70f38e")
-		(property "Reference" "#PWR426"
+		(property "Reference" "#PWR0426"
 			(at 228.6 114.3 0)
 			(effects
 				(font
@@ -7068,7 +7007,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR426")
+					(reference "#PWR0426")
 					(unit 1)
 				)
 			)
@@ -7083,7 +7022,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f32b230-cebb-4c82-af58-3fc5e9c67489")
-		(property "Reference" "#PWR317"
+		(property "Reference" "#PWR0317"
 			(at 48.26 139.7 0)
 			(effects
 				(font
@@ -7133,73 +7072,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR317")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 168.91 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f90b363-29a7-4644-bf4d-79f9a584c9c0")
-		(property "Reference" "#FLG0400"
-			(at 168.91 111.125 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 168.91 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 168.91 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cd611031-12eb-4281-91d7-ddadb10329c8")
-		)
-		(instances
-			(project ""
-				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#FLG0400")
+					(reference "#PWR0317")
 					(unit 1)
 				)
 			)
@@ -7269,7 +7142,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "4784939"
+		(property "Stock" "6715457"
 			(at 139.7 123.19 0)
 			(effects
 				(font
@@ -7278,7 +7151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.011USD"
+		(property "Price" "0.010USD"
 			(at 139.7 123.19 0)
 			(effects
 				(font
@@ -7418,7 +7291,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Bridged"
+		(property "Value" "Test Buck Vout"
 			(at 187.96 55.88 0)
 			(effects
 				(font
@@ -7478,7 +7351,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6bb37e07-cbef-4017-8feb-5bf4f7563b39")
-		(property "Reference" "#PWR434"
+		(property "Reference" "#PWR0434"
 			(at 228.6 139.7 0)
 			(effects
 				(font
@@ -7528,7 +7401,72 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR434")
+					(reference "#PWR0434")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 168.91 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "757b678f-1e33-445f-b1ce-e06583c20911")
+		(property "Reference" "#FLG0302"
+			(at 168.91 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 168.91 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 168.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c38aff77-dce4-4eaa-b161-df6554dc680e")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
+					(reference "#FLG0302")
 					(unit 1)
 				)
 			)
@@ -7543,7 +7481,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "766088fc-4172-475a-8414-96028f76bf62")
-		(property "Reference" "#PWR300"
+		(property "Reference" "#PWR0300"
 			(at 33.02 60.96 0)
 			(effects
 				(font
@@ -7593,7 +7531,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR300")
+					(reference "#PWR0300")
 					(unit 1)
 				)
 			)
@@ -7608,7 +7546,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "76b57eb3-e632-43ee-8e3f-8a469a58f780")
-		(property "Reference" "#PWR319"
+		(property "Reference" "#PWR0319"
 			(at 63.5 139.7 0)
 			(effects
 				(font
@@ -7658,7 +7596,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR319")
+					(reference "#PWR0319")
 					(unit 1)
 				)
 			)
@@ -7727,7 +7665,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "5436546"
+		(property "Stock" "5427590"
 			(at 74.93 71.12 0)
 			(effects
 				(font
@@ -7868,7 +7806,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d4be03b-7920-4d6f-b46f-fea23a806404")
-		(property "Reference" "#PWR302"
+		(property "Reference" "#PWR0302"
 			(at 212.09 60.96 0)
 			(effects
 				(font
@@ -7918,7 +7856,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR302")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -7933,7 +7871,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ffa9274-bfd0-41e8-b1e1-b31e50895a96")
-		(property "Reference" "#PWR428"
+		(property "Reference" "#PWR0428"
 			(at 212.09 114.3 0)
 			(effects
 				(font
@@ -7983,7 +7921,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR428")
+					(reference "#PWR0428")
 					(unit 1)
 				)
 			)
@@ -7998,7 +7936,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "81a3c393-a68a-4ce2-a8ec-e926fd0dd2ba")
-		(property "Reference" "#PWR318"
+		(property "Reference" "#PWR0318"
 			(at 55.88 139.7 0)
 			(effects
 				(font
@@ -8048,7 +7986,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR318")
+					(reference "#PWR0318")
 					(unit 1)
 				)
 			)
@@ -8118,7 +8056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "4784939"
+		(property "Stock" "6715457"
 			(at 149.86 123.19 0)
 			(effects
 				(font
@@ -8127,7 +8065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.011USD"
+		(property "Price" "0.010USD"
 			(at 149.86 123.19 0)
 			(effects
 				(font
@@ -8259,7 +8197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8789ba68-b0a3-42f4-9fff-d6acab19d980")
-		(property "Reference" "#PWR323"
+		(property "Reference" "#PWR0323"
 			(at 149.86 139.7 0)
 			(effects
 				(font
@@ -8309,7 +8247,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR323")
+					(reference "#PWR0323")
 					(unit 1)
 				)
 			)
@@ -8324,7 +8262,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8997c401-fb7a-4df3-9a88-1fe53296634a")
-		(property "Reference" "#PWR320"
+		(property "Reference" "#PWR0320"
 			(at 81.28 139.7 0)
 			(effects
 				(font
@@ -8374,7 +8312,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR320")
+					(reference "#PWR0320")
 					(unit 1)
 				)
 			)
@@ -8389,7 +8327,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a689cb1-bec2-4575-b517-a45069520cd4")
-		(property "Reference" "#PWR436"
+		(property "Reference" "#PWR0436"
 			(at 245.11 139.7 0)
 			(effects
 				(font
@@ -8439,7 +8377,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR436")
+					(reference "#PWR0436")
 					(unit 1)
 				)
 			)
@@ -8454,7 +8392,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8dcd56b0-66c1-4db7-b9f9-e6067ba0176c")
-		(property "Reference" "#PWR321"
+		(property "Reference" "#PWR0321"
 			(at 130.81 139.7 0)
 			(effects
 				(font
@@ -8504,7 +8442,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR321")
+					(reference "#PWR0321")
 					(unit 1)
 				)
 			)
@@ -8573,7 +8511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "13746052"
+		(property "Stock" "7034931"
 			(at 130.81 128.27 0)
 			(effects
 				(font
@@ -8741,7 +8679,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "93afee18-150a-4e56-84a8-f838fd5ebe15")
-		(property "Reference" "#PWR304"
+		(property "Reference" "#PWR0304"
 			(at 64.77 86.36 0)
 			(effects
 				(font
@@ -8791,7 +8729,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR304")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -8815,7 +8753,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "54k9"
 			(at 147.32 64.77 0)
 			(effects
 				(font
@@ -8875,7 +8813,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "990e0d68-286c-4f2a-b75d-5768866e4248")
-		(property "Reference" "#PWR305"
+		(property "Reference" "#PWR0305"
 			(at 74.93 86.36 0)
 			(effects
 				(font
@@ -8925,167 +8863,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR305")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Red")
-		(at 212.09 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9da05a09-953b-441a-8259-69f896a65726")
-		(property "Reference" "D400"
-			(at 214.63 115.4746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Red"
-			(at 214.63 118.0147 0)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:D_0603"
-			(at 210.312 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-40°C~+85°C Red 0603 LED Indication - Discrete ROHS"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2286"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" "3289269"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.009USD"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" "SMT"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Attrition Qty" "6"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" "Optocouplers & LEDs & Infrared,Light Emitting Diodes (LED)"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Hubei KENTO Elec"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "KT-0603R"
-			(at 212.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6a9dfa49-d483-4e1b-aff1-7a78755d235e")
-		)
-		(pin "1"
-			(uuid "99179a77-945e-493d-aa9e-f63b44ab652b")
-		)
-		(instances
-			(project "base-module"
-				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "D400")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
@@ -9220,7 +8998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "2203364"
+		(property "Stock" "4293394"
 			(at 154.94 69.85 0)
 			(effects
 				(font
@@ -9229,7 +9007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.020USD"
+		(property "Price" "0.017USD"
 			(at 154.94 69.85 0)
 			(effects
 				(font
@@ -9370,7 +9148,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "3.3uH"
 			(at 139.7 57.15 90)
 			(effects
 				(font
@@ -9396,7 +9174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "DMBJ CXP0420-3R3M-AG(3.3UH)"
 			(at 139.7 59.69 0)
 			(effects
 				(font
@@ -9549,7 +9327,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "911336"
+		(property "Stock" "703987"
 			(at 228.6 127 0)
 			(effects
 				(font
@@ -9771,7 +9549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "2203364"
+		(property "Stock" "4293394"
 			(at 165.1 69.85 0)
 			(effects
 				(font
@@ -9780,7 +9558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.020USD"
+		(property "Price" "0.017USD"
 			(at 165.1 69.85 0)
 			(effects
 				(font
@@ -9920,7 +9698,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS563200"
+		(property "Value" "TPS563201DDCR"
 			(at 95.25 55.245 0)
 			(effects
 				(font
@@ -9992,7 +9770,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c7552cc2-2ba6-4723-90d5-9dd744bfb85e")
-		(property "Reference" "#PWR415"
+		(property "Reference" "#PWR0415"
 			(at 33.02 86.36 0)
 			(effects
 				(font
@@ -10042,7 +9820,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR415")
+					(reference "#PWR0415")
 					(unit 1)
 				)
 			)
@@ -10057,7 +9835,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cfc694b1-1be1-4c94-80b7-fba255633817")
-		(property "Reference" "#PWR316"
+		(property "Reference" "#PWR0316"
 			(at 185.42 114.3 0)
 			(effects
 				(font
@@ -10107,7 +9885,167 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR316")
+					(reference "#PWR0316")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Green")
+		(at 245.11 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0ed8675-c494-44be-82ce-d2da6f5ea20e")
+		(property "Reference" "D402"
+			(at 247.65 115.4746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Green"
+			(at 247.65 118.0147 0)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_0603"
+			(at 243.332 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2207051802_Everlight-Elec-19-217-GHC-YR1S2-6T_C2986059.pdf"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0603 LED Indication - Discrete ROHS"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2986059"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "276928"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.021USD"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "8"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Optocoupler/LED/Digital Tube/Photoelectric Device,Light Emitting Diodes (LED)"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Everlight Elec"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "19-217/GHC-YR1S2/6T"
+			(at 245.11 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2518b9d1-08cd-4ae5-8c33-36cffc9f48a0")
+		)
+		(pin "2"
+			(uuid "1b181b1e-02da-4dd7-aaa9-56fd08106517")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
+					(reference "D402")
 					(unit 1)
 				)
 			)
@@ -10176,7 +10114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "13746052"
+		(property "Stock" "7034931"
 			(at 146.05 74.93 0)
 			(effects
 				(font
@@ -10344,7 +10282,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1e85421-533d-4f57-8b48-24cfd3e05af6")
-		(property "Reference" "#FLG300"
+		(property "Reference" "#FLG0300"
 			(at 81.28 55.245 0)
 			(effects
 				(font
@@ -10394,7 +10332,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#FLG300")
+					(reference "#FLG0300")
 					(unit 1)
 				)
 			)
@@ -10463,7 +10401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "927669"
+		(property "Stock" "735848"
 			(at 245.11 127 0)
 			(effects
 				(font
@@ -10631,7 +10569,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d516b1e1-1420-406f-9792-c6fe905a3d32")
-		(property "Reference" "#PWR307"
+		(property "Reference" "#PWR0307"
 			(at 146.05 86.36 0)
 			(effects
 				(font
@@ -10681,7 +10619,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR307")
+					(reference "#PWR0307")
 					(unit 1)
 				)
 			)
@@ -10748,7 +10686,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "5436546"
+		(property "Stock" "5427590"
 			(at 125.73 62.23 0)
 			(effects
 				(font
@@ -10880,6 +10818,323 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Variable-Resistors:Fuse,1.5A")
+		(at 41.91 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc14de7f-0f49-4cbd-b04c-84a13228a33d")
+		(property "Reference" "F300"
+			(at 41.91 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.5A"
+			(at 41.91 57.785 90)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:F_0603"
+			(at 41.91 61.468 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2202211730_TLC-Electronic-F06F1-5_C2924957.pdf"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0603 Disposable fuses ROHS"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2924957"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "450"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.048USD"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "5"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "4"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "TVS/Fuse/Board Level Protection,Fuses"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TLC Electronic"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "F06F1.5"
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f3f03b45-b232-4b95-9c59-71babf33b572")
+		)
+		(pin "1"
+			(uuid "500618e7-7f49-40b5-bdaa-ab771fc1be98")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
+					(reference "F300")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Green")
+		(at 212.09 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd54e308-e351-46d9-9546-d337e3ea9eec")
+		(property "Reference" "D400"
+			(at 214.63 115.4746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Green"
+			(at 214.63 118.0147 0)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_0603"
+			(at 210.312 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2207051802_Everlight-Elec-19-217-GHC-YR1S2-6T_C2986059.pdf"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0603 LED Indication - Discrete ROHS"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2986059"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "276928"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.021USD"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "8"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Optocoupler/LED/Digital Tube/Photoelectric Device,Light Emitting Diodes (LED)"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Everlight Elec"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "19-217/GHC-YR1S2/6T"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b6baf28-4786-4775-b2e8-d924f4084616")
+		)
+		(pin "2"
+			(uuid "93378d6e-cfa1-45ea-b3cb-e491c3dce540")
+		)
+		(instances
+			(project "base-module"
+				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
+					(reference "D400")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 139.7 133.35 0)
 		(unit 1)
@@ -10888,7 +11143,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e466d7de-e8bb-4999-a1dc-3ca3e972c1d7")
-		(property "Reference" "#PWR322"
+		(property "Reference" "#PWR0322"
 			(at 139.7 139.7 0)
 			(effects
 				(font
@@ -10938,7 +11193,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR322")
+					(reference "#PWR0322")
 					(unit 1)
 				)
 			)
@@ -10962,7 +11217,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "33k2"
 			(at 132.08 118.11 0)
 			(effects
 				(font
@@ -11022,7 +11277,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e7f54018-8e9d-49fe-bb26-18dc46bed970")
-		(property "Reference" "#PWR303"
+		(property "Reference" "#PWR0303"
 			(at 54.61 86.36 0)
 			(effects
 				(font
@@ -11072,7 +11327,7 @@
 		(instances
 			(project "base-module"
 				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "#PWR303")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -11141,7 +11396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "2203364"
+		(property "Stock" "4293394"
 			(at 64.77 71.12 0)
 			(effects
 				(font
@@ -11150,7 +11405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.020USD"
+		(property "Price" "0.017USD"
 			(at 64.77 71.12 0)
 			(effects
 				(font
@@ -11274,166 +11529,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Red")
-		(at 245.11 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ed15ba2d-ef87-480c-8f7f-c51e3e744187")
-		(property "Reference" "D402"
-			(at 247.65 115.4746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Red"
-			(at 247.65 118.0147 0)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:D_0603"
-			(at 243.332 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "-40°C~+85°C Red 0603 LED Indication - Discrete ROHS"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2286"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" "3289269"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.009USD"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" "SMT"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Attrition Qty" "6"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" "Optocouplers & LEDs & Infrared,Light Emitting Diodes (LED)"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Hubei KENTO Elec"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "KT-0603R"
-			(at 245.11 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ef0d60af-804c-4125-806d-b61cb0b23f4e")
-		)
-		(pin "1"
-			(uuid "dccfb3a8-70dc-41d1-97b6-4bc3c18d189a")
-		)
-		(instances
-			(project ""
-				(path "/090a8e41-87a8-4fb1-998b-60a2c0dc4cee/3f372eb1-53a4-4b00-8846-6751dd401eeb"
-					(reference "D402")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,2.2kΩ")
 		(at 212.09 127 0)
 		(unit 1)
@@ -11496,7 +11591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Stock" "2234263"
+		(property "Stock" "750885"
 			(at 212.09 127 0)
 			(effects
 				(font
